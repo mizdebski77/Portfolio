@@ -1,9 +1,8 @@
+import { Home } from "../features/Home";
 
 function App() {
   return (
-    <div>
-      hej
-    </div>
+    <Home />
   );
 }
 
