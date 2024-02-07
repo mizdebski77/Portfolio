@@ -1,8 +1,20 @@
+import { Box } from "@mui/material";
+import { Navigation } from "../common/Navigation";
 import { Home } from "../features/Home";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const theme = createTheme({
+});
 
 function App() {
   return (
-    <Home />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Navigation />
+      <Home />
+    </ThemeProvider>
+
   );
 }
 
