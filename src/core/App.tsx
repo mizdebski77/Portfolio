@@ -1,7 +1,6 @@
-import { Box } from "@mui/material";
+import { Box, ThemeProvider, createTheme } from "@mui/material";
 import { Navigation } from "../common/Navigation";
 import { Home } from "../features/Home";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from "./theme";
 
