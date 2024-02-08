@@ -1,4 +1,4 @@
-import { Box, ThemeProvider, createTheme } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import { Navigation } from "../common/Navigation";
 import { Home } from "../features/Home";
 import CssBaseline from '@mui/material/CssBaseline';
