@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-import { lime } from "@mui/material/colors";
+import { lime, purple } from "@mui/material/colors";
 
 export const theme = createTheme({
     components: {
@@ -14,8 +14,15 @@ export const theme = createTheme({
 
     palette: {
         primary: {
-            main: '#100c04'
+            main: '#100c04',
+            light: '#b2b2b1',
+            contrastText: '#bcdb02',
         },
-        secondary: lime
+        secondary: {
+            main: '#bcdb02'
+        }
+    },
+    typography: {
+        fontFamily: 'Roboto'
     }
 })
