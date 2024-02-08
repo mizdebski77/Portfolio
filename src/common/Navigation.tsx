@@ -1,10 +1,11 @@
+import { Box } from '@mui/material';
 import React from 'react';
 
 export const Navigation = () => {
     return (
-        <div>
+        <Box sx={{ borderBottom: 1 , borderColor: }}>
 
-        </div>
+        </Box>
     );
 };
 
