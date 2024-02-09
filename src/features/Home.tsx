@@ -3,10 +3,6 @@ import profile from '../common/Images/profile.png';
 import { Blob } from "./Blob";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Link from '@mui/material/Link';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { socialLinks } from "../common/socialLinks";
 
 export const Home = () => {
@@ -46,7 +42,7 @@ export const Home = () => {
                     I'm an enthusiastic Frontend Developer with a strong passion for new technologies and a deep commitment to learning React. I am highly motivated and thrive on being a fast learner. Currently, I am actively seeking new job opportunities to further enhance my skills and contribute to innovative projects.
                 </Typography>
 
-                <Box sx={{ mt: 4, display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+                <Box sx={{ mt: 4, display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', px: 4 }}>
 
                     {socialLinks.map((link, index) => (
                         <Link
@@ -61,7 +57,7 @@ export const Home = () => {
                                     border: 1, p: 1.5,
                                     borderRadius: '50%',
                                     background: '#bcdb02',
-                                    transition: "background 0.5s, color 0.5s",
+                                    transition: "background 0.4s, color 0.4s",
                                     "&:hover": {
                                         background: "transparent",
                                         color: "#bcdb02"
@@ -70,6 +66,16 @@ export const Home = () => {
                         </Link>
                     ))}
                 </Box>
+
+                <Link
+                    component="button"
+                    variant="body2"
+                    onClick={() => {
+                        console.info("I'm a button.");
+                    }}
+                >
+                    Button Link
+                </Link>
             </Grid2>
 
 
