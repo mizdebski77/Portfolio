@@ -14,7 +14,14 @@ export const Home = () => {
 
 
     return (
-        <Container maxWidth='xl' sx={{ height: '100vh', display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <Container
+            maxWidth='xl'
+            sx={{
+                height: '100vh',
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center"
+            }}>
             <Box
                 component={motion.div}
                 variants={containerVariants}
@@ -80,7 +87,12 @@ export const Home = () => {
                         maxWidth: 780,
                         textAlign: "justify"
                     }}>
-                    I'm an enthusiastic Frontend Developer with a strong passion for new technologies and a deep commitment to learning React. I am highly motivated and thrive on being a fast learner. Currently, I am actively seeking new job opportunities to further enhance my skills and contribute to innovative projects.
+                    I'm an enthusiastic Frontend Developer with a
+                    strong passion for new technologies and a deep
+                    commitment to learning React. I am highly motivated
+                    and thrive on being a fast learner. Currently, I
+                    am actively seeking new job opportunities to further
+                    enhance my skills and contribute to innovative projects.
                 </Typography>
 
                 <Box
@@ -141,9 +153,7 @@ export const Home = () => {
                             color: theme.palette.primary.contrastText,
                             background: theme.palette.primary.main,
                         }
-
-                    }}
-                >
+                    }}>
                     Contact Me
                 </Button>
             </Grid2>

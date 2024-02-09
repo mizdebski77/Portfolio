@@ -19,7 +19,7 @@ export const Navigation = () => {
 
                 <div>
                     <Tabs
-                        sx={{ color: 'primary.contrastText',  }}
+                        sx={{ color: 'primary.contrastText', }}
                         aria-label="Tabs where selection follows focus"
                         selectionFollowsFocus
                     >
