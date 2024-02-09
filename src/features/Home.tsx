@@ -2,10 +2,17 @@ import { Box, Container, Typography } from "@mui/material";
 import profile from '../common/Images/profile.png';
 import { Blob } from "./Blob";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import Link from '@mui/material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { socialLinks } from "../common/socialLinks";
 
 export const Home = () => {
+
     return (
-        <Container maxWidth='lg' sx={{ height: '100vh', display: "flex", justifyContent: "space-between" }}>
+        <Container maxWidth='xl' sx={{ height: '100vh', display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <Box sx={{ display: 'flex', alignItems: 'center', position: 'relative', }}>
                 <svg style={{ position: 'absolute', bottom: 0 }} />
 
@@ -32,11 +39,40 @@ export const Home = () => {
             </Box>
 
 
-            <Grid2 display='grid' alignItems='center'  >
-                <Typography variant="h2" sx={{ color: 'primary.light' }}>Hello I'm Marcin Izdebski </Typography>
+            <Grid2 display='grid' alignItems='center' sx={{ gap: 1 }}  >
+                <Typography variant="h2" sx={{ color: 'white', fontSize: 40 }}>Hello I'm Marcin Izdebski </Typography>
+                <Typography variant="h1" sx={{ color: 'primary.contrastText', fontSize: 88 }}>Frontend Developer </Typography>
+                <Typography variant="h3" component='span' sx={{ color: 'primary.light', fontSize: 24, maxWidth: 720, textAlign: "justify" }}>
+                    I'm an enthusiastic Frontend Developer with a strong passion for new technologies and a deep commitment to learning React. I am highly motivated and thrive on being a fast learner. Currently, I am actively seeking new job opportunities to further enhance my skills and contribute to innovative projects.
+                </Typography>
+
+                <Box sx={{ mt: 4, display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+
+                    {socialLinks.map((link, index) => (
+                        <Link
+                            href={link.href}
+                            target="_blank"
+                            sx={{ p: 0, }}
+                            key={index}
+                        >
+                            <link.icon
+                                sx={{
+                                    fontSize: '4rem',
+                                    border: 1, p: 1.5,
+                                    borderRadius: '50%',
+                                    background: '#bcdb02',
+                                    transition: "background 0.5s, color 0.5s",
+                                    "&:hover": {
+                                        background: "transparent",
+                                        color: "#bcdb02"
+                                    }
+                                }} />
+                        </Link>
+                    ))}
+                </Box>
             </Grid2>
 
 
-        </Container>
+        </Container >
     );
 };
