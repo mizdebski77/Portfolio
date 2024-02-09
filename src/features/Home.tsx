@@ -4,6 +4,8 @@ import { Blob } from "./Blob";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Link from '@mui/material/Link';
 import { socialLinks } from "../common/socialLinks";
+import Button from '@mui/material/Button';
+import { theme } from "../core/theme";
 
 export const Home = () => {
 
@@ -31,7 +33,7 @@ export const Home = () => {
                 >
                     <img src={profile} alt="Profile" />
                 </Box>
-                <Blob />Z
+                <Blob />
             </Box>
 
 
@@ -42,7 +44,7 @@ export const Home = () => {
                     I'm an enthusiastic Frontend Developer with a strong passion for new technologies and a deep commitment to learning React. I am highly motivated and thrive on being a fast learner. Currently, I am actively seeking new job opportunities to further enhance my skills and contribute to innovative projects.
                 </Typography>
 
-                <Box sx={{ mt: 4, display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', px: 4 }}>
+                <Box sx={{ mt: 4, mb: 4, display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', px: 4 }}>
 
                     {socialLinks.map((link, index) => (
                         <Link
@@ -62,20 +64,35 @@ export const Home = () => {
                                         background: "transparent",
                                         color: "#bcdb02"
                                     }
-                                }} />
+                                }}
+                            />
                         </Link>
                     ))}
                 </Box>
 
-                <Link
-                    component="button"
-                    variant="body2"
-                    onClick={() => {
-                        console.info("I'm a button.");
+                <Button variant="contained"
+                    sx={{
+                        background: 'transparent',
+                        color: theme.palette.secondary.main,
+                        maxWidth: 200,
+                        width: '100%',
+                        m: 'auto',
+                        py: 1.25,
+                        fontWeight: 600,
+                        fontSize: 16,
+                        border: 1,
+                        transition: "background 0.4s, color 0.4s",
+                        "&:hover": {
+                            color: theme.palette.secondary.contrastText,
+                            background: theme.palette.secondary.main,
+                            border: 1,
+                            borderColor: '#bcdb02'
+                        }
                     }}
                 >
-                    Button Link
-                </Link>
+                    Contact Me
+                </Button>
+
             </Grid2>
 
 
