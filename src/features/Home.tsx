@@ -58,11 +58,12 @@ export const Home = () => {
                                     fontSize: '4rem',
                                     border: 1, p: 1.5,
                                     borderRadius: '50%',
-                                    background: '#bcdb02',
+                                    background: theme.palette.primary.main,
+                                    color: theme.palette.primary.contrastText,
                                     transition: "background 0.4s, color 0.4s",
                                     "&:hover": {
-                                        background: "transparent",
-                                        color: "#bcdb02"
+                                        color: theme.palette.primary.main,
+                                        background: theme.palette.primary.contrastText,
                                     }
                                 }}
                             />
@@ -72,8 +73,6 @@ export const Home = () => {
 
                 <Button variant="contained"
                     sx={{
-                        background: 'transparent',
-                        color: theme.palette.secondary.main,
                         maxWidth: 200,
                         width: '100%',
                         m: 'auto',
@@ -81,13 +80,14 @@ export const Home = () => {
                         fontWeight: 600,
                         fontSize: 16,
                         border: 1,
+                        background: theme.palette.primary.contrastText,
+                        color: theme.palette.primary.main,
                         transition: "background 0.4s, color 0.4s",
                         "&:hover": {
-                            color: theme.palette.secondary.contrastText,
-                            background: theme.palette.secondary.main,
-                            border: 1,
-                            borderColor: '#bcdb02'
+                            color: theme.palette.primary.contrastText,
+                            background: theme.palette.primary.main,
                         }
+
                     }}
                 >
                     Contact Me
