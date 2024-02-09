@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import { socialLinks } from "../common/socialLinks";
 import Button from '@mui/material/Button';
 import { theme } from "../core/theme";
+import { TypeAnimation } from 'react-type-animation';
 
 export const Home = () => {
 
@@ -39,7 +40,17 @@ export const Home = () => {
 
             <Grid2 display='grid' alignItems='center' sx={{ gap: 1 }}  >
                 <Typography variant="h2" sx={{ color: 'white', fontSize: 40 }}>Hello I'm Marcin Izdebski </Typography>
-                <Typography variant="h1" sx={{ color: 'primary.contrastText', fontSize: 88 }}>Frontend Developer </Typography>
+                <TypeAnimation
+                    sequence={[
+                        'Frontend Developer',
+                        1000,
+                    ]}
+                    wrapper="h1"
+                    speed={4}
+                    style={{ fontSize: 88, display: 'inline-block', color: '#bcdb02', margin: 0 }}
+                    repeat={Infinity}
+                />
+
                 <Typography variant="h3" component='span' sx={{ color: 'primary.light', fontSize: 24, maxWidth: 720, textAlign: "justify" }}>
                     I'm an enthusiastic Frontend Developer with a strong passion for new technologies and a deep commitment to learning React. I am highly motivated and thrive on being a fast learner. Currently, I am actively seeking new job opportunities to further enhance my skills and contribute to innovative projects.
                 </Typography>
@@ -92,6 +103,8 @@ export const Home = () => {
                 >
                     Contact Me
                 </Button>
+
+
 
             </Grid2>
 
