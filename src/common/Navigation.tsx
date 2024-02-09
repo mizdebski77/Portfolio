@@ -1,6 +1,7 @@
 import LaptopIcon from '@mui/icons-material/Laptop';
 import { AppBar, Box, IconButton, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 import React from 'react';
+import { navLinks } from './navLinks';
 
 export const Navigation = () => {
     return (
@@ -8,11 +9,11 @@ export const Navigation = () => {
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                     <IconButton sx={{ color: 'primary.contrastText', p: 0, }} >
-                        <LaptopIcon sx={{ fontSize: '2.5rem', mr: 2 }} />
+                        <LaptopIcon sx={{ fontSize: '3.5rem', mr: 2 }} />
                     </IconButton>
-                    <Typography sx={{ fontSize: 28 }} variant='h5' component='span' >
+                    <Typography sx={{ fontSize: 40 }} variant='h5' component='span' >
                         Marcin
-                        <Typography sx={{ color: 'primary.light', fontSize: 28 }} variant='h5' component='span' > Izdebski</Typography>
+                        <Typography sx={{ color: 'primary.light', fontSize: 40 }} variant='h5' component='span' > Izdebski</Typography>
                     </Typography>
                 </Box>
 
@@ -22,10 +23,9 @@ export const Navigation = () => {
                         aria-label="Tabs where selection follows focus"
                         selectionFollowsFocus
                     >
-                        <Tab label="Home" sx={{ color: 'primary.contrastText' }} />
-                        <Tab label="Skills" sx={{ color: 'primary.contrastText' }} />
-                        <Tab label="Portfolio" sx={{ color: 'primary.contrastText' }} />
-                        <Tab label="Contact" sx={{ color: 'primary.contrastText' }} />
+                        {navLinks.map((navLink, index) => (
+                            <Tab label={navLink.text} sx={{ color: 'primary.contrastText' }} />
+                        ))}
                     </Tabs>
                 </div>
 
