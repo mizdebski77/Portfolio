@@ -5,7 +5,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 export const Home = () => {
     return (
-        <Container sx={{ height: '100vh', display: "flex", justifyContent: "space-between" }}>
+        <Container maxWidth='lg' sx={{ height: '100vh', display: "flex", justifyContent: "space-between" }}>
             <Box sx={{ display: 'flex', alignItems: 'center', position: 'relative', }}>
                 <svg style={{ position: 'absolute', bottom: 0 }} />
 
