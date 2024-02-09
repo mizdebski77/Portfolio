@@ -7,15 +7,23 @@ import { socialLinks } from "../common/socialLinks";
 import Button from '@mui/material/Button';
 import { theme } from "../core/theme";
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from "framer-motion";
+import { containerVariants, variantButton, variantText, variantTitle } from "../common/animation";
 
 export const Home = () => {
 
+
     return (
         <Container maxWidth='xl' sx={{ height: '100vh', display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', position: 'relative', }}>
+            <Box
+                component={motion.div}
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                sx={{ display: 'flex', alignItems: 'center', position: 'relative', }}>
                 <svg style={{ position: 'absolute', bottom: 0 }} />
-
                 <Box
+
                     sx={{
                         maxWidth: '550px',
                         width: '100%',
@@ -37,9 +45,18 @@ export const Home = () => {
                 <Blob />
             </Box>
 
-
             <Grid2 display='grid' alignItems='center' sx={{ gap: 1 }}  >
-                <Typography variant="h2" sx={{ color: 'white', fontSize: 40 }}>Hello I'm Marcin Izdebski </Typography>
+                <Typography
+                    component={motion.h2}
+                    variants={variantTitle}
+                    initial="hidden"
+                    animate="visible"
+                    variant="h2"
+                    sx={{ color: 'white', fontSize: 40 }}
+                >
+                    Hello I'm Marcin Izdebski
+                </Typography>
+
                 <TypeAnimation
                     sequence={[
                         'Frontend Developer',
@@ -51,14 +68,35 @@ export const Home = () => {
                     repeat={Infinity}
                 />
 
-                <Typography variant="h3" component='span' sx={{ color: 'primary.light', fontSize: 24, maxWidth: 720, textAlign: "justify" }}>
+                <Typography
+                    component={motion.span}
+                    variants={variantText}
+                    initial="hidden"
+                    animate="visible"
+                    variant="h3"
+                    sx={{
+                        color: 'primary.light',
+                        fontSize: 24,
+                        maxWidth: 780,
+                        textAlign: "justify"
+                    }}>
                     I'm an enthusiastic Frontend Developer with a strong passion for new technologies and a deep commitment to learning React. I am highly motivated and thrive on being a fast learner. Currently, I am actively seeking new job opportunities to further enhance my skills and contribute to innovative projects.
                 </Typography>
 
-                <Box sx={{ mt: 4, mb: 4, display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', px: 4 }}>
-
+                <Box
+                    sx={{
+                        m: 4,
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'center',
+                        px: 4
+                    }}>
                     {socialLinks.map((link, index) => (
                         <Link
+                            component={motion.a}
+                            initial={{ opacity: 0, x: '100vh' }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1.5, delay: index * 0.2, type: "spring", }}
                             href={link.href}
                             target="_blank"
                             sx={{ p: 0, }}
@@ -82,7 +120,12 @@ export const Home = () => {
                     ))}
                 </Box>
 
-                <Button variant="contained"
+                <Button
+                    component={motion.button}
+                    variants={variantButton}
+                    initial="hidden"
+                    animate="visible"
+                    variant="contained"
                     sx={{
                         maxWidth: 200,
                         width: '100%',
@@ -103,12 +146,7 @@ export const Home = () => {
                 >
                     Contact Me
                 </Button>
-
-
-
             </Grid2>
-
-
         </Container >
     );
 };
