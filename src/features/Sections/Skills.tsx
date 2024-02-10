@@ -1,7 +1,6 @@
 import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
 import { theme } from '../../core/theme';
-import { color } from 'framer-motion';
 
 export const Skills = () => {
     return (
