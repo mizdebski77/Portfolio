@@ -6,11 +6,11 @@ export const About = () => {
         <Box
             sx={{
                 height: '100vh',
-                position: 'absolute',
-                top: '100vh',
+                top: 0,
+                position: 'sticky',
                 width: '100%',
                 background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
-                zIndex: 1,
+                pt:10
             }}>
             <Typography
                 variant='h1'
