@@ -18,7 +18,6 @@ export const Home = () => {
             maxWidth='xl'
             sx={{
                 height: '100vh',
-                pt: 10,
             }}>
             <Box
                 maxWidth='xl'
