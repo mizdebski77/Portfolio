@@ -15,6 +15,7 @@ export const Home = () => {
 
     return (
         <Container
+            id='home'
             maxWidth='xl'
             sx={{
                 height: '100vh',
