@@ -4,13 +4,14 @@ import { theme } from '../../core/theme';
 export const About = () => {
     return (
         <Box
+            id='about'
             sx={{
                 height: '100vh',
                 top: 0,
                 position: 'sticky',
                 width: '100%',
                 background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
-                pt:10
+                pt: 10
             }}>
             <Typography
                 variant='h1'
