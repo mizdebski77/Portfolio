@@ -5,6 +5,7 @@ import { theme } from '../../core/theme';
 export const Skills = () => {
     return (
         <Box
+            id='skills'
             sx={{
                 height: '100vh',
                 top: 0,

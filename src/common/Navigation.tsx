@@ -2,6 +2,7 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 import { AppBar, Box, IconButton, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 import React from 'react';
 import { navLinks } from './navLinks';
+import { Link } from 'react-scroll';
 
 export const Navigation = () => {
     return (
@@ -23,15 +24,14 @@ export const Navigation = () => {
                         aria-label="Tabs where selection follows focus"
                         selectionFollowsFocus
                     >
-                        {navLinks.map((navLink, index) => (
-                            <Tab
+                        {navLinks.map((link, index) => (
+                            <Link
                                 key={index}
-                                label={navLink.text}
-                                sx={{
-                                    color: 'primary.contrastText',
-                                    fontSize: 20
-                                }}
-                            />
+                                spy={true}
+                                to={link.to}
+                                smooth={true}
+                                style={{ color: 'red' }}
+                            >{link.text}</Link>
                         ))}
                     </Tabs>
                 </div>
