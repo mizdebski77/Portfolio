@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from "./theme";
 import AnimatedCursor from 'react-animated-cursor';
 import { Skills } from "../features/Sections/Skills";
+import { About } from "../features/Sections/AboutMe";
 
 
 
@@ -22,6 +23,7 @@ function App() {
       />
       <Navigation />
       <Home />
+      <About />
       <Skills />
 
 
