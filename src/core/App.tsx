@@ -4,6 +4,7 @@ import { Home } from "../features/Sections/Home";
 import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from "./theme";
 import AnimatedCursor from 'react-animated-cursor';
+import { Skills } from "../features/Sections/Skills";
 
 
 
@@ -21,6 +22,9 @@ function App() {
       />
       <Navigation />
       <Home />
+      <Skills />
+
+
     </ThemeProvider>
 
   );
