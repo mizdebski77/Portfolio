@@ -5,7 +5,7 @@ import { navLinks } from './navLinks';
 
 export const Navigation = () => {
     return (
-        <AppBar sx={{ position: 'sticky', px: 4, py: 2, zIndex: 1 }}>
+        <AppBar sx={{ position: 'fixed', px: 4, py: 2, zIndex: 10 }}>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                     <IconButton sx={{ color: 'primary.contrastText', p: 0, }} >

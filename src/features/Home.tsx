@@ -20,7 +20,8 @@ export const Home = () => {
                 height: '100vh',
                 display: "flex",
                 justifyContent: "space-between",
-                alignItems: "center"
+                alignItems: "center",
+                pt: 10
             }}>
             <Box
                 component={motion.div}
