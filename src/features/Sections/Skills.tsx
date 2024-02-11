@@ -30,7 +30,7 @@ export const Skills = () => {
             </Typography>
 
             <Container maxWidth='xl'
-                sx={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 2, }}
+                sx={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 6, p: 4 }}
             >
                 {
                     technologies.map((technology, index) => (
@@ -42,8 +42,10 @@ export const Skills = () => {
                                 p: 6,
                                 alignItems: 'center',
                                 justifyContent: 'center',
+                                gap: 2,
                                 border: 1,
-                                borderColor: theme.palette.primary.contrastText
+                                borderColor: theme.palette.primary.contrastText,
+                                boxShadow: 0,
                             }}
                         >
                             <SvgIcon
@@ -55,8 +57,8 @@ export const Skills = () => {
                                 component='span'
                                 sx={{
                                     color: theme.palette.primary.light,
-                                    textAlign: 'center'
-
+                                    textAlign: 'center',
+                                    fontSize: 24
                                 }}
                             >
                                 {technology.text}
