@@ -1,7 +1,7 @@
 import { Box, Container, Typography, } from '@mui/material';
 import React from 'react';
 import { theme } from '../../core/theme';
-import { technologies } from '../../common/skillset';
+import { skills, } from '../../common/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
 
 export const Skills = () => {
@@ -29,45 +29,56 @@ export const Skills = () => {
                 Skills
             </Typography>
 
-            <Container maxWidth='xl'
-                sx={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 6, p: 4 }}
-            >
-                {
-                    technologies.map((technology, index) => (
-                        <Box
-                            key={index}
-                            sx={{
-                                display: 'grid',
-                                background: '#10100e',
-                                p: 6,
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                gap: 2,
-                                border: 1,
-                                borderColor: theme.palette.primary.contrastText,
-                                boxShadow: 0,
-                            }}
+            <Container maxWidth='xl' sx={{ display: 'grid', gap: 6, p: 4 }}>
+                {skills.map((skill, skillIndex) => (
+                    <Box key={skillIndex}>
+                        <Typography
+                            variant='h3'
+                            color={theme.palette.primary.light}
+                            mb='10px'
+                            fontSize={40}
                         >
-                            <SvgIcon
-                                sx={{ color: theme.palette.primary.contrastText, width: '80px', height: '80px', margin: 'auto' }}
-                            >
-                                {technology.icon}
-                            </SvgIcon>
-                            <Typography
-                                component='span'
-                                sx={{
-                                    color: theme.palette.primary.light,
-                                    textAlign: 'center',
-                                    fontSize: 24
-                                }}
-                            >
-                                {technology.text}
-                            </Typography>
+                            {skill.title}
+                        </Typography>
+                        <Box sx={{ display: 'flex', gap: 6 }}>
+                            {skill.elements.map((element, elementIndex) => (
+                                <Box
+                                    key={elementIndex}
+                                    sx={{
+                                        display: 'grid',
+                                        background: '#10100e',
+                                        p: 6,
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        gap: 2,
+                                        border: 1,
+                                        borderColor: theme.palette.primary.contrastText,
+                                        boxShadow: 0,
+                                        width: 260
+                                    }}
+                                >
+                                    <SvgIcon
+                                        sx={{ color: theme.palette.primary.contrastText, width: '80px', height: '80px', margin: 'auto' }}
+                                    >
+                                        {element.icon}
+                                    </SvgIcon>
+                                    <Typography
+                                        component='span'
+                                        sx={{
+                                            color: theme.palette.primary.light,
+                                            textAlign: 'center',
+                                            fontSize: 24
+                                        }}
+                                    >
+                                        {element.text}
+                                    </Typography>
+                                </Box>
+                            ))}
                         </Box>
-                    ))
-                }
-
+                    </Box>
+                ))}
             </Container>
+
         </Box >
     );
 };
