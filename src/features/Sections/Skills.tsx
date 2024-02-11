@@ -34,9 +34,9 @@ export const Skills = () => {
                     <Box key={skillIndex}>
                         <Typography
                             variant='h3'
-                            color={theme.palette.primary.light}
+                            color='#ffff'
                             mb='10px'
-                            fontSize={40}
+                            fontSize={52}
                         >
                             {skill.title}
                         </Typography>
