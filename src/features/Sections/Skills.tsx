@@ -1,8 +1,9 @@
-import { Box, Container, Typography, } from '@mui/material';
+import { Box, Container, Paper, Typography, } from '@mui/material';
 import React from 'react';
 import { theme } from '../../core/theme';
 import { skills, } from '../../common/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
+import { motion } from 'framer-motion';
 
 export const Skills = () => {
     return (
@@ -40,7 +41,42 @@ export const Skills = () => {
                         >
                             {skill.title}
                         </Typography>
-                        <Box sx={{ display: 'flex', gap: 6 }}>
+                        <Container maxWidth='lg' sx={{ m: 'auto', overflow: 'hidden' }}>
+                            <Box
+                                component={motion.div}
+                                initial={{ transform: 'translateX(0)' }}
+                                animate={{ transform: 'translateX(calc(-250px))' }}
+                                transition={{ duration: 10, repeat: Infinity }}
+                                sx={{ display: 'flex', gap: 40, width: 'calc(250px * 18)' }}
+                            >
+                                {skill.elements.map((element, elementIndex) => (
+                                    <Paper
+                                        key={elementIndex}
+                                        sx={{
+                                            height: 200,
+                                            width: 250,
+                                            background: '#10100e',
+                                            p: 6,
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            border: 1,
+                                            borderColor: theme.palette.primary.contrastText,
+                                            boxShadow: 0,
+                                        }}
+                                    >
+                                        <SvgIcon
+                                            sx={{ color: theme.palette.primary.contrastText, width: '80px', height: '80px', margin: 'auto' }}
+                                        >
+                                            {element.icon}
+                                        </SvgIcon>
+                                    </Paper>
+
+                                ))}
+
+                            </Box>
+
+                        </Container>
+                        {/* <Box sx={{ display: 'flex', gap: 6 }}>
                             {skill.elements.map((element, elementIndex) => (
                                 <Box
                                     key={elementIndex}
@@ -74,10 +110,11 @@ export const Skills = () => {
                                     </Typography>
                                 </Box>
                             ))}
-                        </Box>
+                        </Box> */}
                     </Box>
-                ))}
-            </Container>
+                ))
+                }
+            </Container >
 
         </Box >
     );
