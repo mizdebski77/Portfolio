@@ -53,6 +53,10 @@ export const Skills = () => {
                             px: 2,
                             border: 1,
                             borderColor: theme.palette.primary.contrastText,
+                            transition: "transform 0.3s ease-in-out",
+                            "&:hover": {
+                                transform: 'rotate(45deg)'
+                            }
                         }} >
                         <SvgIcon
                             sx={{
