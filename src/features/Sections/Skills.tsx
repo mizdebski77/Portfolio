@@ -17,7 +17,7 @@ export const Skills = () => {
                 position: 'sticky',
                 width: '100%',
                 background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
-                pt: 4
+                pt: 4,
             }}>
 
             <Typography
@@ -32,60 +32,44 @@ export const Skills = () => {
                 Skills
             </Typography>
 
-            <Container maxWidth='xl' sx={{ display: 'grid', gap: 6, p: 4 }}>
+            <Container maxWidth='xl' sx={{ display: 'flex', flexWrap: 'wrap', gap: 6, p: 4 }}>
                 {skills.map((skill, skillIndex) => (
-                    <Box key={skillIndex}>
-                        <Typography
-                            variant='h3'
-                            color='#ffff'
-                            mb='10px'
-                            fontSize={52}
+                    <Paper
+                        key={skillIndex}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            flexDirection: 'column',
+                            background: '#10100e ',
+                            width: '240px',
+                            height: '240px',
+                            py: 4,
+                            px: 1,
+                            border: 1,
+                            borderColor: theme.palette.primary.contrastText,
+                        }} >
+                        <SvgIcon
+                            sx={{
+                                color: theme.palette.primary.contrastText,
+                                width: '80px',
+                                height: '80px',
+                                margin: 'auto'
+                            }}
                         >
-                            {skill.title}
+                            {skill.icon}
+                        </SvgIcon>
+                        <Typography
+                            component='span'
+                            sx={{
+                                color: theme.palette.primary.light,
+                                textAlign: 'center',
+                                fontSize: 24
+                            }}
+                        >
+                            {skill.text}
                         </Typography>
-
-                        <Container maxWidth='xl' >
-
-                            <Slider
-                                width='1200px'
-                                duration={2}
-                                pauseOnHover={true}
-                                blurBorders={true}
-                                blurBoderColor={' rgba(16,12,4,1)'}
-                            >
-                                {skill.elements.map((element, elementIndex) => (
-                                    <Box key={elementIndex}
-                                        sx={{
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            flexDirection: 'column',
-                                        }} >
-                                        <SvgIcon
-                                            sx={{
-                                                color: theme.palette.primary.contrastText,
-                                                width: '80px',
-                                                height: '80px',
-                                                margin: 'auto'
-                                            }}
-                                        >
-                                            {element.icon}
-                                        </SvgIcon>
-                                        <Typography
-                                            component='span'
-                                            sx={{
-                                                color: theme.palette.primary.light,
-                                                textAlign: 'center',
-                                                fontSize: 24
-                                            }}
-                                        >
-                                            {element.text}
-                                        </Typography>
-                                    </Box>
-                                ))}
-                            </Slider>
-                        </Container>
-                    </Box>
+                    </Paper>
                 ))
                 }
             </Container >
