@@ -3,8 +3,6 @@ import { FaCss3 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaAws } from "react-icons/fa";
-import { FaNpm } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";

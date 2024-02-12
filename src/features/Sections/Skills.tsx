@@ -1,10 +1,7 @@
-import { Box, Container, Paper, Typography, keyframes, } from '@mui/material';
-import React from 'react';
+import { Box, Container, Paper, Typography, } from '@mui/material';
 import { theme } from '../../core/theme';
 import { skills, } from '../../common/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
-import { motion } from 'framer-motion';
-import Slider from 'react-infinite-logo-slider'
 
 export const Skills = () => {
 
