@@ -36,7 +36,7 @@ export const skills: Skill[] = [
       { icon: <SiAdobepremierepro />, text: "Adobe Premiere Pro" },
       { icon: <SiAdobeillustrator />, text: "Adobe Illustrator" },
       { icon: <SiAdobeaftereffects />, text: "Adobe After Effects" },
-      
+
     ],
   },
   // {
