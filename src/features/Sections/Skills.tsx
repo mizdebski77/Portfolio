@@ -32,7 +32,15 @@ export const Skills = () => {
                 Skills
             </Typography>
 
-            <Container maxWidth='xl' sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 6, p: 4 }}>
+            <Container
+                maxWidth='xl'
+                sx={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    gap: 6,
+                    p: 4
+                }}>
                 {skills.map((skill, skillIndex) => (
                     <Paper
                         key={skillIndex}
@@ -45,15 +53,15 @@ export const Skills = () => {
                             width: '180px',
                             height: '180px',
                             py: 4,
-                            px: 1,
+                            px: 2,
                             border: 1,
                             borderColor: theme.palette.primary.contrastText,
                         }} >
                         <SvgIcon
                             sx={{
                                 color: theme.palette.primary.contrastText,
-                                width: '40px',
-                                height: '40px',
+                                width: '64px',
+                                height: '64px',
                                 margin: 'auto'
                             }}
                         >

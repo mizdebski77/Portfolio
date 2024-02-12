@@ -37,6 +37,6 @@ export const skills = [
   { icon: <FaJira />, text: "Jira" },
   { icon: <FaFigma />, text: "Figma" },
   { icon: <SiAdobephotoshop />, text: "Adobe Photoshop" },
-  { icon: <SiAdobepremierepro />, text: "Adobe Premiere Pro" },
-  { icon: <SiAdobeaftereffects />, text: "Adobe After Effects" },
+  { icon: <SiAdobepremierepro />, text: "Premiere Pro" },
+  { icon: <SiAdobeaftereffects />, text: " After Effects" },
 ];
