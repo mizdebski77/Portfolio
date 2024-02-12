@@ -1,4 +1,4 @@
-import { Box, Container, Paper, Typography, } from '@mui/material';
+import { Box, Container, Paper, Typography, keyframes, } from '@mui/material';
 import React from 'react';
 import { theme } from '../../core/theme';
 import { skills, } from '../../common/skillset';
@@ -6,6 +6,22 @@ import SvgIcon from '@mui/material/SvgIcon';
 import { motion } from 'framer-motion';
 
 export const Skills = () => {
+
+    const scrollAnimation = {
+        initial: {
+            transform: 'translateX(0)',
+        },
+        animate: {
+            transform: 'translateX(calc(-250px * 5))',
+            transition: {
+                duration: 5,
+                ease: 'linear',
+                repeat: Infinity,
+            },
+        },
+    };
+
+
     return (
         <Box
             id='skills'
@@ -41,40 +57,38 @@ export const Skills = () => {
                         >
                             {skill.title}
                         </Typography>
-                        <Container maxWidth='lg' sx={{ m: 'auto', overflow: 'hidden' }}>
-                            <Box
-                                component={motion.div}
-                                initial={{ transform: 'translateX(0)' }}
-                                animate={{ transform: 'translateX(calc(-250px))' }}
-                                transition={{ duration: 10, repeat: Infinity }}
-                                sx={{ display: 'flex', gap: 40, width: 'calc(250px * 18)' }}
-                            >
-                                {skill.elements.map((element, elementIndex) => (
-                                    <Paper
-                                        key={elementIndex}
-                                        sx={{
-                                            height: 200,
-                                            width: 250,
-                                            background: '#10100e',
-                                            p: 6,
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            border: 1,
-                                            borderColor: theme.palette.primary.contrastText,
-                                            boxShadow: 0,
-                                        }}
-                                    >
-                                        <SvgIcon
-                                            sx={{ color: theme.palette.primary.contrastText, width: '80px', height: '80px', margin: 'auto' }}
-                                        >
-                                            {element.icon}
-                                        </SvgIcon>
-                                    </Paper>
-                                ))}
+
+                        <Container maxWidth='lg' >
+
+                            <Box sx={{
+                                background: 'orange',
+                                height: '100px',
+                                margin: 'auto',
+                                overflow: 'hidden',
+                                position: 'relative',
+                            }}>
+                                <motion.div
+                                    initial="initial"
+                                    animate="animate"
+                                    variants={scrollAnimation}
+                                    style={{
+                                        display: 'flex',
+                                        width: 'calc(250px * 10)',
+                                    }}
+                                >
+                                    {skill.elements.map((element, elementIndex) => (
+                                        <Paper key={elementIndex} sx={{ height: '100%', width: '250px' }} >
+                                            <SvgIcon sx={{ color: theme.palette.primary.contrastText, }}>
+                                                {element.icon}
+                                            </SvgIcon>
+                                        </Paper>
+                                    ))}
+                                </motion.div>
                             </Box>
                         </Container>
                     </Box>
-                ))}
+                ))
+                }
             </Container >
         </Box >
     );
