@@ -39,31 +39,31 @@ export const skills: Skill[] = [
 
     ],
   },
-  // {
-  //   title: "Libraries",
-  //   elements: [
-  //     { icon: <FaReact />, text: "React" },
-  //     { icon: <SiRedux />, text: "Redux" },
-  //     { icon: <SiStyledcomponents />, text: "Styled Components" },
-  //     { icon: <SiReactquery />, text: "React Query" },
-  //     { icon: <TbBrandReactNative />, text: "React Native" },
-  //     { icon: <SiMui />, text: "Material-UI" },
-  //   ],
-  // },
-  // {
-  //   title: "Technologies",
-  //   elements: [
-  //     { icon: <FaHtml5 />, text: "HTML5" },
-  //     { icon: <FaCss3 />, text: "CSS3" },
-  //     { icon: <SiTypescript />, text: "TypeScript" },
-  //     { icon: <IoLogoJavascript />, text: "JavaScript" },
-  //     { icon: <FaAngular />, text: "Angular" },
-  //     { icon: <DiScrum />, text: "Scrum" },
-  //     { icon: <FaGithub />, text: "GitHub" },
-  //     { icon: <FaAws />, text: "AWS" },
-  //     { icon: <FaNpm />, text: "npm" },
-  //     { icon: <FaJira />, text: "Jira" },
-  //     { icon: <FaFigma />, text: "Figma" },
-  //   ],
-  // },
+  {
+    title: "Libraries",
+    elements: [
+      { icon: <FaReact />, text: "React" },
+      { icon: <SiRedux />, text: "Redux" },
+      { icon: <SiStyledcomponents />, text: "Styled Components" },
+      { icon: <SiReactquery />, text: "React Query" },
+      { icon: <TbBrandReactNative />, text: "React Native" },
+      { icon: <SiMui />, text: "Material-UI" },
+    ],
+  },
+  {
+    title: "Technologies",
+    elements: [
+      { icon: <FaHtml5 />, text: "HTML5" },
+      { icon: <FaCss3 />, text: "CSS3" },
+      { icon: <SiTypescript />, text: "TypeScript" },
+      { icon: <IoLogoJavascript />, text: "JavaScript" },
+      { icon: <FaAngular />, text: "Angular" },
+      { icon: <DiScrum />, text: "Scrum" },
+      { icon: <FaGithub />, text: "GitHub" },
+      { icon: <FaAws />, text: "AWS" },
+      { icon: <FaNpm />, text: "npm" },
+      { icon: <FaJira />, text: "Jira" },
+      { icon: <FaFigma />, text: "Figma" },
+    ],
+  },
 ];

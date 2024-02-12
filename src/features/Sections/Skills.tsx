@@ -46,12 +46,13 @@ export const Skills = () => {
 
                         <Container maxWidth='xl' >
 
-                            <Slider
-                                width='1200px'
-                                duration={2}
-                                pauseOnHover={true}
-                                blurBorders={true}
-                                blurBoderColor={' rgba(16,12,4,1)'}
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    gap: 4,
+                                    padding: 2,
+                                }}
                             >
                                 {skill.elements.map((element, elementIndex) => (
                                     <Box key={elementIndex}
@@ -60,6 +61,12 @@ export const Skills = () => {
                                             alignItems: 'center',
                                             justifyContent: 'center',
                                             flexDirection: 'column',
+                                            gap: 2,
+                                            width: '250px',
+                                            height: '250px',
+                                            border: 1,
+                                            borderColor: theme.palette.primary.contrastText,
+
                                         }} >
                                         <SvgIcon
                                             sx={{
@@ -83,7 +90,7 @@ export const Skills = () => {
                                         </Typography>
                                     </Box>
                                 ))}
-                            </Slider>
+                            </Box>
                         </Container>
                     </Box>
                 ))
