@@ -4,23 +4,9 @@ import { theme } from '../../core/theme';
 import { skills, } from '../../common/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
 import { motion } from 'framer-motion';
+import Slider from 'react-infinite-logo-slider'
 
 export const Skills = () => {
-
-    const scrollAnimation = {
-        initial: {
-            transform: 'translateX(0)',
-        },
-        animate: {
-            transform: 'translateX(calc(-250px * 5))',
-            transition: {
-                duration: 5,
-                ease: 'linear',
-                repeat: Infinity,
-            },
-        },
-    };
-
 
     return (
         <Box
@@ -60,31 +46,19 @@ export const Skills = () => {
 
                         <Container maxWidth='lg' >
 
-                            <Box sx={{
-                                background: 'orange',
-                                height: '100px',
-                                margin: 'auto',
-                                overflow: 'hidden',
-                                position: 'relative',
-                            }}>
-                                <motion.div
-                                    initial="initial"
-                                    animate="animate"
-                                    variants={scrollAnimation}
-                                    style={{
-                                        display: 'flex',
-                                        width: 'calc(250px * 10)',
-                                    }}
-                                >
-                                    {skill.elements.map((element, elementIndex) => (
-                                        <Paper key={elementIndex} sx={{ height: '100%', width: '250px' }} >
-                                            <SvgIcon sx={{ color: theme.palette.primary.contrastText, }}>
-                                                {element.icon}
-                                            </SvgIcon>
-                                        </Paper>
-                                    ))}
-                                </motion.div>
-                            </Box>
+                            <Slider
+                                duration={5}
+                                pauseOnHover={true}
+                                blurBorders={true}
+                                blurBoderColor={'#fff'}>
+                                {skill.elements.map((element, elementIndex) => (
+                                    <Paper key={elementIndex} sx={{ height: '100%', width: '250px' }} >
+                                        <SvgIcon sx={{ color: theme.palette.primary.contrastText, }}>
+                                            {element.icon}
+                                        </SvgIcon>
+                                    </Paper>
+                                ))}
+                            </Slider>
                         </Container>
                     </Box>
                 ))
