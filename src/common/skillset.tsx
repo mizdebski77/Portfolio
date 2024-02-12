@@ -34,8 +34,6 @@ export const skills = [
   { icon: <FaAngular />, text: "Angular" },
   { icon: <DiScrum />, text: "Scrum" },
   { icon: <FaGithub />, text: "GitHub" },
-  { icon: <FaAws />, text: "AWS" },
-  { icon: <FaNpm />, text: "npm" },
   { icon: <FaJira />, text: "Jira" },
   { icon: <FaFigma />, text: "Figma" },
   { icon: <SiAdobephotoshop />, text: "Adobe Photoshop" },
