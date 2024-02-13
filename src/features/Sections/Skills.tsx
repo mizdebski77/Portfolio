@@ -32,7 +32,7 @@ export const Skills = () => {
                     color: theme.palette.primary.contrastText,
                     letterSpacing: 20,
                 }}>
-                Skills
+                Tech Stack
             </Typography>
 
             <Container
@@ -42,7 +42,8 @@ export const Skills = () => {
                     flexWrap: 'wrap',
                     justifyContent: 'center',
                     gap: 6,
-                    p: 4
+                    px: 4,
+                    py: 6
                 }}>
                 {skills.map((skill, skillIndex) => (
                     <Paper
