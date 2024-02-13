@@ -21,7 +21,7 @@ function App() {
         innerScale={0.6}
         outerScale={0}
       />
-      <Navigation />
+      {/* <Navigation /> */}
       <Home />
       <About />
       <Skills />

@@ -1,7 +1,9 @@
 import { Box, Container, Typography } from '@mui/material';
 import { theme } from '../../core/theme';
+import xd from '../../common/Images/profile.png'
 
 export const About = () => {
+
     return (
         <Box
             id='about'
@@ -25,12 +27,26 @@ export const About = () => {
             >About Me</Typography>
             <Container
                 maxWidth='xl'
+                sx={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr'
+                }}
             >
+                <Box
+                    sx={{
+                        backgroundImage: `url(${xd})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                    }}
+                >
+
+                </Box>
 
 
-            </Container>
+            </Container >
 
-        </Box>
+        </Box >
     );
 };
 
