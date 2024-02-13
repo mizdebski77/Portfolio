@@ -1,6 +1,6 @@
 import LaptopIcon from '@mui/icons-material/Laptop';
 import { AppBar, Box, IconButton, Tabs, Toolbar, Typography } from '@mui/material';
-import { navLinks } from './navLinks';
+import { navLinks } from './Arrays/navLinks';
 import { Link } from 'react-scroll';
 
 export const Navigation = () => {

@@ -1,6 +1,6 @@
 import { Box, Container, Paper, Typography, } from '@mui/material';
 import { theme } from '../../core/theme';
-import { skills, } from '../../common/skillset';
+import { skills, } from '../../common/Arrays/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
 import { motion } from 'framer-motion';
 import useInViewAnimation from '../../core/useInView';
