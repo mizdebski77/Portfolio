@@ -69,9 +69,11 @@ export const Skills = () => {
                             borderRadius: 2,
                             borderColor: 'white',
                             transition: "transform 0.3s ease-in-out",
+                            boxShadow: '0 0 10px white',
                             "&:hover": {
                                 transform: 'rotate(30deg)',
-                                boxShadow: '0 0 10px rgba(250, 520, 520, 0.5), 5px 5px 10px rgba(230, 450, 520, 0.2)'
+                                boxShadow: `0 0 10px ${theme.palette.primary.contrastText}`,
+                                borderColor: theme.palette.primary.contrastText,
                             }
                         }} >
                         <SvgIcon
