@@ -6,6 +6,7 @@ import { theme } from "./theme";
 import AnimatedCursor from 'react-animated-cursor';
 import { Skills } from "../features/Sections/Skills";
 import { About } from "../features/Sections/AboutMe";
+import { Portfolio } from "../features/Sections/Portfolio";
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Home />
       {/* <About /> */}
       <Skills />
+      <Portfolio />
 
 
     </ThemeProvider>
