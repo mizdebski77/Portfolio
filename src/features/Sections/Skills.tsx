@@ -66,7 +66,8 @@ export const Skills = () => {
                             py: 4,
                             px: 2,
                             border: 1,
-                            borderColor: theme.palette.primary.contrastText,
+                            borderRadius: 2,
+                            borderColor: 'white',
                             transition: "transform 0.3s ease-in-out",
                             "&:hover": {
                                 transform: 'rotate(30deg)',
