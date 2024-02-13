@@ -55,7 +55,8 @@ export const Skills = () => {
                             borderColor: theme.palette.primary.contrastText,
                             transition: "transform 0.3s ease-in-out",
                             "&:hover": {
-                                transform: 'rotate(45deg)'
+                                transform: 'rotate(30deg)',
+                                boxShadow: '0 0 10px rgba(250, 520, 520, 0.5), 5px 5px 10px rgba(230, 450, 520, 0.2)'
                             }
                         }} >
                         <SvgIcon
