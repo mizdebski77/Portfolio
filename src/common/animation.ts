@@ -54,4 +54,13 @@ export const variantButton = {
             type: "spring",
         }
     }
+};
+
+export const variantOpacity = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1
+    }
 }

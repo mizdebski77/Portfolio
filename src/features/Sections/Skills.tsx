@@ -2,13 +2,14 @@ import { Box, Container, Paper, Typography, } from '@mui/material';
 import { theme } from '../../core/theme';
 import { skills, } from '../../common/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
+import useInViewAnimation from '../../core/useInView';
+import { variantOpacity } from '../../common/animation';
 
 export const Skills = () => {
 
-    const ref = useRef(null)
-    const inView = useInView(ref)
+    const { animation, ref } = useInViewAnimation(0.2);
+
 
     return (
         <Box
@@ -36,7 +37,6 @@ export const Skills = () => {
 
             <Container
                 maxWidth='xl'
-
                 sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -49,8 +49,9 @@ export const Skills = () => {
                         ref={ref}
                         key={skillIndex}
                         component={motion.div}
-                        initial={{ opacity: 0, }}
-                        animate={{ opacity: 1, }}
+                        variants={variantOpacity}
+                        initial="hidden"
+                        animate={animation}
                         transition={{
                             duration: 1, delay: skillIndex * 0.2, ease: 'linear'
                         }}
