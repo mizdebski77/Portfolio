@@ -2,6 +2,7 @@ import { Box, Container, Paper, Typography, } from '@mui/material';
 import { theme } from '../../core/theme';
 import { skills, } from '../../common/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
+import { motion } from 'framer-motion';
 
 export const Skills = () => {
 
@@ -31,6 +32,7 @@ export const Skills = () => {
 
             <Container
                 maxWidth='xl'
+
                 sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -41,6 +43,12 @@ export const Skills = () => {
                 {skills.map((skill, skillIndex) => (
                     <Paper
                         key={skillIndex}
+                        component={motion.div}
+                        initial={{ opacity: 0, }}
+                        animate={{ opacity: 1, }}
+                        transition={{
+                            duration: 1, delay: skillIndex * 0.2, ease: 'linear'
+                        }}
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
