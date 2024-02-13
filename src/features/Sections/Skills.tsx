@@ -2,9 +2,13 @@ import { Box, Container, Paper, Typography, } from '@mui/material';
 import { theme } from '../../core/theme';
 import { skills, } from '../../common/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 export const Skills = () => {
+
+    const ref = useRef(null)
+    const inView = useInView(ref)
 
     return (
         <Box
@@ -42,6 +46,7 @@ export const Skills = () => {
                 }}>
                 {skills.map((skill, skillIndex) => (
                     <Paper
+                        ref={ref}
                         key={skillIndex}
                         component={motion.div}
                         initial={{ opacity: 0, }}

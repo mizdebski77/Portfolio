@@ -23,7 +23,7 @@ function App() {
       />
       <Navigation />
       <Home />
-      {/* <About /> */}
+      <About />
       <Skills />
 
 
