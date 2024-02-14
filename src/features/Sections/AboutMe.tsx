@@ -1,7 +1,6 @@
 import { Box, Container, Typography } from '@mui/material';
 import { theme } from '../../core/theme';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
-import xd from '../../common/Images/profile.png'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 
