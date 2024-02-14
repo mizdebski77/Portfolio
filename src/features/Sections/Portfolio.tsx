@@ -47,7 +47,7 @@ export const Portfolio = () => {
                                 justifyContent: 'center'
                             }}
                         >
-                            <img src={project.image} alt='project image' style={{ maxWidth: 600, }} />
+                            <img src={project.image} alt='project' style={{ maxWidth: 600, }} />
 
                         </Box>
                         <Box display='grid' gap={2} >
