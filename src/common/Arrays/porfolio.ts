@@ -56,8 +56,8 @@ export const projects = [
         ],
         image: pp,
         liveUrl: 'https://polskiepaulownie.pl/Strona-G%C5%82%C3%B3wna',
-        codeUrl: undefined,
-        APIlink: undefined,
+        codeUrl: '',
+        APIlink: '',
     },
 
     {
@@ -73,8 +73,8 @@ export const projects = [
         ],
         image: ms,
         liveUrl: 'https://www.miroslawstach.pl/home',
-        codeUrl: undefined,
-        APIlink: undefined,
+        codeUrl: '',
+        APIlink: '',
     },
 
     {
@@ -127,7 +127,7 @@ export const projects = [
         image: ca,
         liveUrl: 'https://crudaplication.netlify.app/home',
         codeUrl: 'https://github.com/mizdebski77/crud-app-angular',
-        APIlink: undefined,
+        APIlink: '',
     },
 
     {
@@ -144,6 +144,6 @@ export const projects = [
         image: tl,
         liveUrl: 'https://mizdebski77.github.io/Tasks-List-ReactJS/',
         codeUrl: 'https://github.com/mizdebski77/Tasks-List-ReactJS',
-        APIlink: undefined,
+        APIlink: '',
     },
 ]
