@@ -37,19 +37,28 @@ export const Portfolio = () => {
             >
                 {projects.map((project) => (
                     <Stack direction="row" spacing={4} maxWidth={1200}>
-                        <Box
+                        <Link
+                            href={project.liveUrl}
+                            target='_blank'
                             sx={{
                                 borderColor: theme.palette.primary.light,
                                 borderRadius: 1,
                                 overflow: 'hidden',
                                 width: 720,
                                 display: 'flex',
-                                justifyContent: 'center'
+                                justifyContent: 'center',
+                                boxShadow: '0 0 10px white'
                             }}
                         >
-                            <img src={project.image} alt='project' style={{ maxWidth: 600, }} />
+                            <img
+                                src={project.image}
+                                alt='project'
+                                style={{
+                                    maxWidth: 600,
 
-                        </Box>
+                                }} />
+
+                        </Link>
                         <Box display='grid' gap={2} >
                             <Stack direction='row'
                                 sx={{
