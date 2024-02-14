@@ -5,6 +5,7 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { Image, List, ListItem } from './styledPortfolio';
 import { motion } from 'framer-motion';
+import { containerVariants, variantText, variantTitle } from '../../../common/animation';
 
 export const Portfolio = () => {
     return (
@@ -47,6 +48,10 @@ export const Portfolio = () => {
                         maxWidth={1500}
                     >
                         <Link
+                            component={motion.a}
+                            variants={containerVariants}
+                            initial="hidden"
+                            animate="visible"
                             href={project.liveUrl}
                             target='_blank'
                             sx={{
@@ -72,6 +77,10 @@ export const Portfolio = () => {
                         </Link>
                         <Box display='grid' gap={2} >
                             <Stack direction='row'
+                                component={motion.div}
+                                variants={variantTitle}
+                                initial="hidden"
+                                animate="visible"
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
@@ -154,6 +163,10 @@ export const Portfolio = () => {
                                 </Stack>
                             </Stack>
                             <Box
+                                component={motion.div}
+                                variants={variantText}
+                                initial="hidden"
+                                animate="visible"
                                 sx={{
                                     maxWidth: 900,
                                     background: 'rgba(255, 255, 255, 0.2)',
