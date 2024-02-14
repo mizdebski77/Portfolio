@@ -3,7 +3,7 @@ import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import { Image } from './styledPortfolio';
+import { Image, List, ListItem } from './styledPortfolio';
 
 export const Portfolio = () => {
     return (
@@ -154,33 +154,13 @@ export const Portfolio = () => {
                                     {project.description}
                                 </Typography>
                             </Box>
-                            <ul
-                                style={{
-                                    display: 'flex',
-                                    color: 'white',
-                                    justifyContent: 'space-around',
-                                    flexWrap: 'wrap',
-                                    padding: 2
-                                }}
-                            >
+                            <List>
                                 {project.tags.map((tag, index) => (
-                                    <li
-                                        key={index}
-                                        style={{
-                                            marginRight: 10,
-                                            listStyle: 'none',
-                                            fontFamily: 'Arimo, sans-serif',
-                                            fontSize: 14,
-                                            color: theme.palette.primary.contrastText
-                                        }}
-                                    >
+                                    <ListItem key={index} >
                                         {tag}
-
-                                    </li>
+                                    </ListItem>
                                 ))}
-
-                            </ul>
-
+                            </List>
                         </Box>
                     </Stack>
                 ))}
