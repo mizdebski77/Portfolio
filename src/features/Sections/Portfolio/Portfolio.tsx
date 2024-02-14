@@ -37,7 +37,11 @@ export const Portfolio = () => {
                 }}
             >
                 {projects.map((project) => (
-                    <Stack direction="row" spacing={4} maxWidth={1200}>
+                    <Stack
+                        key={project.id}
+                        direction={project.id % 2 === 0 ? "row-reverse" : "row"}
+                        spacing={4}
+                        maxWidth={1200}>
                         <Link
                             href={project.liveUrl}
                             target='_blank'
@@ -164,9 +168,6 @@ export const Portfolio = () => {
                         </Box>
                     </Stack>
                 ))}
-
-
-
             </Container >
 
         </Box >
