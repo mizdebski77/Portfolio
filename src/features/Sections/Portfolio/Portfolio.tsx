@@ -53,6 +53,11 @@ export const Portfolio = () => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 boxShadow: '0 0 10px white',
+                                transition: '0.4s',
+
+                                "&:hover": {
+                                    boxShadow: `0 0 40px ${theme.palette.primary.contrastText}`
+                                }
                             }}
                         >
                             <Image
