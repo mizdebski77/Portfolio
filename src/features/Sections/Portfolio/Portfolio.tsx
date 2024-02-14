@@ -4,6 +4,7 @@ import { projects } from '../../../common/Arrays/porfolio';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { Image, List, ListItem } from './styledPortfolio';
+import { motion } from 'framer-motion';
 
 export const Portfolio = () => {
     return (
@@ -30,7 +31,7 @@ export const Portfolio = () => {
             </Typography>
 
             <Container
-                maxWidth='lg'
+                maxWidth='xl'
                 sx={{
                     px: 4,
                     py: 12,
@@ -43,11 +44,7 @@ export const Portfolio = () => {
                         key={project.id}
                         direction={project.id % 2 === 0 ? "row-reverse" : "row"}
                         spacing={4}
-                        maxWidth={1200}
-                        sx={{
-                            display: 'flex',
-
-                        }}
+                        maxWidth={1500}
                     >
                         <Link
                             href={project.liveUrl}
@@ -56,7 +53,7 @@ export const Portfolio = () => {
                                 borderColor: theme.palette.primary.light,
                                 borderRadius: 1,
                                 overflow: 'hidden',
-                                width: 720,
+                                maxWidth: 600,
                                 display: 'flex',
                                 justifyContent: 'center',
                                 boxShadow: '0 0 10px white',
@@ -83,8 +80,8 @@ export const Portfolio = () => {
                                 <Typography component='h3' color='white' fontSize={40}>
                                     {project.name}
                                 </Typography>
-                                <Stack direction="row" spacing={2}>
 
+                                <Stack direction="row" spacing={2}>
                                     {project.codeUrl !== undefined ? (
                                         <Link
                                             href={project.codeUrl}
@@ -158,6 +155,7 @@ export const Portfolio = () => {
                             </Stack>
                             <Box
                                 sx={{
+                                    maxWidth: 900,
                                     background: 'rgba(255, 255, 255, 0.2)',
                                     borderRadius: 2,
                                     p: 4,
@@ -176,7 +174,13 @@ export const Portfolio = () => {
                             </Box>
                             <List>
                                 {project.tags.map((tag, index) => (
-                                    <ListItem key={index} >
+                                    <ListItem
+                                        key={index}
+                                        as={motion.li}
+                                        initial={{ opacity: 0, x: '100vh' }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 1.5, delay: index * 0.2, type: "spring", }}
+                                    >
                                         {tag}
                                     </ListItem>
                                 ))}
@@ -185,7 +189,6 @@ export const Portfolio = () => {
                     </Stack>
                 ))}
             </Container >
-
         </Box >
     );
 };
