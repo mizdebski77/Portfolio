@@ -2,6 +2,7 @@ import { Box, Container, Typography } from '@mui/material';
 import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
 import { ProjectItem } from './ProjectItem';
+import Part from '../../../common/particles.';
 
 export const Portfolio = () => {
     return (
@@ -15,6 +16,7 @@ export const Portfolio = () => {
                 background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
                 pt: 4,
             }}>
+
             <Typography
                 variant='h1'
                 sx={{
@@ -40,6 +42,8 @@ export const Portfolio = () => {
                     <ProjectItem key={project.id} project={project} />
                 ))}
             </Container >
+            <Part />
+
         </Box >
     );
 };
