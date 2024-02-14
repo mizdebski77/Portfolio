@@ -45,8 +45,7 @@ export const About = () => {
                     Education
                 </Typography>
                 <Grid2 container spacing={2}>
-                    <img src='https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/331687760_1616553892181493_884769890352635826_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=FZdcEjQLEqcAX_W7Btx&_nc_ht=scontent-waw1-1.xx&oh=00_AfBK6dv4AeaCQ6Z4VOeKnrqOp_qZ1xV13b-inPhuvrwzHQ&oe=65D023D4'
-                        style={{ width: '400px' }} />
+
                     <Box
                     >
                         <CalendarMonthIcon />
