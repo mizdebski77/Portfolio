@@ -78,27 +78,29 @@ export const Portfolio = () => {
                                 </Typography>
                                 <Stack direction="row" spacing={2}>
 
-                                    <Link
-                                        href={project.liveUrl}
-                                        target="_blank"
-                                        sx={{
-                                            px: 3,
-                                            py: 1,
-                                            border: 1,
-                                            borderColor: theme.palette.primary.contrastText,
-                                            fontSize: 18,
-                                            color: theme.palette.primary.contrastText,
-                                            borderRadius: 20,
-                                            textDecoration: 'none',
-                                            transition: "background 0.4s, color 0.4s",
-                                            "&:hover": {
-                                                background: theme.palette.primary.contrastText,
-                                                color: theme.palette.primary.main,
-                                            }
-                                        }}
-                                    >
-                                        Code
-                                    </Link>
+                                    {project.codeUrl !== undefined ? (
+                                        <Link
+                                            href={project.codeUrl}
+                                            target="_blank"
+                                            sx={{
+                                                px: 3,
+                                                py: 1,
+                                                border: 1,
+                                                borderColor: theme.palette.primary.contrastText,
+                                                fontSize: 18,
+                                                color: theme.palette.primary.contrastText,
+                                                borderRadius: 20,
+                                                textDecoration: 'none',
+                                                transition: "background 0.4s, color 0.4s",
+                                                "&:hover": {
+                                                    background: theme.palette.primary.contrastText,
+                                                    color: theme.palette.primary.main,
+                                                }
+                                            }}
+                                        >
+                                            Code
+                                        </Link>
+                                    ) : null}
 
                                     <Link
                                         href={project.codeUrl}
@@ -122,27 +124,29 @@ export const Portfolio = () => {
                                         Live
                                     </Link>
 
-                                    <Link
-                                        href={project.liveUrl}
-                                        target="_blank"
-                                        sx={{
-                                            px: 3,
-                                            py: 1,
-                                            border: 1,
-                                            borderColor: theme.palette.primary.contrastText,
-                                            fontSize: 18,
-                                            color: theme.palette.primary.contrastText,
-                                            borderRadius: 20,
-                                            textDecoration: 'none',
-                                            transition: "background 0.4s, color 0.4s",
-                                            "&:hover": {
-                                                background: theme.palette.primary.contrastText,
-                                                color: theme.palette.primary.main,
-                                            }
-                                        }}
-                                    >
-                                        API
-                                    </Link>
+                                    {project.APIlink !== undefined ? (
+                                        <Link
+                                            href={project.APIlink}
+                                            target="_blank"
+                                            sx={{
+                                                px: 3,
+                                                py: 1,
+                                                border: 1,
+                                                borderColor: theme.palette.primary.contrastText,
+                                                fontSize: 18,
+                                                color: theme.palette.primary.contrastText,
+                                                borderRadius: 20,
+                                                textDecoration: 'none',
+                                                transition: "background 0.4s, color 0.4s",
+                                                "&:hover": {
+                                                    background: theme.palette.primary.contrastText,
+                                                    color: theme.palette.primary.main,
+                                                }
+                                            }}
+                                        >
+                                            API
+                                        </Link>
+                                    ) : null}
                                 </Stack>
                             </Stack>
                             <Box

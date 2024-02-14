@@ -5,8 +5,7 @@ import ms from '../Images/Project/Mstach.png';
 import wt from '../Images/Project/WeatherApp.png';
 import mb from '../Images/Project/MovieBorwser.png';
 import ca from '../Images/Project/Crud.png';
-import tl from '../Images/Project/tasksList.png'
-;
+import tl from '../Images/Project/tasksList.png';
 export const projects = [
     {
         id: 1,
