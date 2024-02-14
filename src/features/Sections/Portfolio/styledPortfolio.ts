@@ -15,6 +15,7 @@ export const List = styled.ul`
     color:#ffff;
     justify-content: space-around;
     flex-wrap:wrap;
+    padding: 0;
 `;
 
 export const ListItem = styled.li`
