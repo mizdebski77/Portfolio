@@ -34,6 +34,8 @@ export const Portfolio = () => {
                 sx={{
                     px: 4,
                     py: 12,
+                    display: 'grid',
+                    gap: 20
                 }}
             >
                 {projects.map((project) => (
@@ -41,7 +43,12 @@ export const Portfolio = () => {
                         key={project.id}
                         direction={project.id % 2 === 0 ? "row-reverse" : "row"}
                         spacing={4}
-                        maxWidth={1200}>
+                        maxWidth={1200}
+                        sx={{
+                            display: 'flex',
+
+                        }}
+                    >
                         <Link
                             href={project.liveUrl}
                             target='_blank'
