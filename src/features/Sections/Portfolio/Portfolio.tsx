@@ -1,8 +1,9 @@
 import { Box, Container, Typography } from '@mui/material';
-import { theme } from '../../core/theme';
-import { projects } from '../../common/Arrays/porfolio';
+import { theme } from '../../../core/theme';
+import { projects } from '../../../common/Arrays/porfolio';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
+import { Image } from './styledPortfolio';
 
 export const Portfolio = () => {
     return (
@@ -47,16 +48,13 @@ export const Portfolio = () => {
                                 width: 720,
                                 display: 'flex',
                                 justifyContent: 'center',
-                                boxShadow: '0 0 10px white'
+                                boxShadow: '0 0 10px white',
                             }}
                         >
-                            <img
+                            <Image
                                 src={project.image}
                                 alt='project'
-                                style={{
-                                    maxWidth: 600,
-
-                                }} />
+                            />
 
                         </Link>
                         <Box display='grid' gap={2} >
