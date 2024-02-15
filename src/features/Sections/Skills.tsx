@@ -54,7 +54,7 @@ export const Skills = () => {
                         initial="hidden"
                         animate={animation}
                         transition={{
-                            duration: 1, delay: skillIndex * 0.2, ease: 'linear'
+                            duration: 0.8, delay: skillIndex * 0.2, ease: 'linear'
                         }}
                         sx={{
                             display: 'flex',
