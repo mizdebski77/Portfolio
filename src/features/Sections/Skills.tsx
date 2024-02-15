@@ -5,7 +5,6 @@ import SvgIcon from '@mui/material/SvgIcon';
 import { motion } from 'framer-motion';
 import useInViewAnimation from '../../core/useInView';
 import { variantOpacity } from '../../common/animation';
-import Part from '../../common/particles.';
 
 export const Skills = () => {
 
@@ -23,8 +22,6 @@ export const Skills = () => {
                 background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
                 pt: 4,
             }}>
-            <Part />
-
 
             <Typography
                 variant='h1'

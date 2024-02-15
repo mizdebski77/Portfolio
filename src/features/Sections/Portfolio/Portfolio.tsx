@@ -2,7 +2,6 @@ import { Box, Container, Typography } from '@mui/material';
 import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
 import { ProjectItem } from './ProjectItem';
-import Part from '../../../common/particles.';
 
 export const Portfolio = () => {
     return (
@@ -42,8 +41,6 @@ export const Portfolio = () => {
                     <ProjectItem key={project.id} project={project} />
                 ))}
             </Container >
-            <Part />
-
         </Box >
     );
 };
