@@ -9,7 +9,6 @@ export const Portfolio = () => {
             id='portfolio'
             sx={{
                 minHeight: '100vh',
-                top: 0,
                 position: 'sticky',
                 width: '100%',
                 background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
