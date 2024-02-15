@@ -37,8 +37,6 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         }
     }
 
-
-
     return (
         <Stack
             key={project.id}
@@ -49,8 +47,8 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             <Link
                 component={motion.a}
                 initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ duration: 2, type: "spring", }}
+                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: project.id % 2 === 0 ? '40vh' : '-40vh' }}
+                transition={{ duration: 0.5, type: "spring", }}
                 href={project.liveUrl}
                 target='_blank'
                 ref={ref}
