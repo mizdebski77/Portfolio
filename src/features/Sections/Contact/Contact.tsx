@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Container, Paper, Typography, Stack } from '@mui/material';
 import { theme } from '../../../core/theme';
-import TextField from '@mui/material/TextField';
 
 export const Contact = () => {
     return (
