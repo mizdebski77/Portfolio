@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Paper, Typography, Stack } from '@mui/material';
+import { Box,   Typography, Stack } from '@mui/material';
 import { theme } from '../../../core/theme';
 
 export const Contact = () => {
