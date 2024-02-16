@@ -61,7 +61,7 @@ export const Skills = () => {
                             alignItems: 'center',
                             justifyContent: 'center',
                             flexDirection: 'column',
-                            background: '#10100e ',
+                            background: 'rgba(255, 255, 255, 0.1 ) ',
                             width: '180px',
                             height: '180px',
                             py: 4,
