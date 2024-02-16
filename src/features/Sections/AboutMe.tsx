@@ -1,9 +1,6 @@
-import { Box, Container, Typography, Stack, Paper } from '@mui/material';
+import { Box,  Typography, Stack, Paper } from '@mui/material';
 import { theme } from '../../core/theme';
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { aboutInformations } from '../../common/Arrays/aboutSections';
-import SchoolIcon from '@mui/icons-material/School';
 export const About = () => {
 
     return (
