@@ -1,4 +1,4 @@
-import { Box, Container, Link, Typography } from '@mui/material';
+import { Box, Container,  Typography } from '@mui/material';
 import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
 import { ProjectItem } from './ProjectItem';
