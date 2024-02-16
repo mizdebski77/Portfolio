@@ -36,22 +36,6 @@ export const About = () => {
                 }}
             >
 
-                <Typography
-                    variant='h2'
-                    color={theme.palette.primary.light}
-                    textAlign={'center'}
-                    fontSize={40}
-                >
-                    Education
-                </Typography>
-                <Grid2 container spacing={2}>
-
-                    <Box
-                    >
-                        <CalendarMonthIcon />
-                        <Typography>Dlaczego </Typography>
-                    </Box>
-                </Grid2>
             </Container >
 
         </Box >

@@ -38,7 +38,7 @@ export const projects = [
             'TANSTACK-QUERY',
         ],
         image: tk,
-        liveUrl: 'https://mizdebski77.github.io/Trek-Shop/',
+        liveUrl: 'https://mizdebski77.github.io/Easy-Employ/',
         codeUrl: 'https://github.com/mizdebski77/Trek-Shop',
         APIlink: 'https://trek-shop-database.onrender.com/',
     },
