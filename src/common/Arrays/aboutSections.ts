@@ -1,16 +1,22 @@
+import SchoolIcon from '@mui/icons-material/School';
+import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
+import TranslateIcon from '@mui/icons-material/Translate';
 export const aboutInformations = [
     {
+        icon: HistoryEduIcon,
         id: 1,
-        title: 'Easy-Employ',
+        title: 'Education',
     },
 
     {
+        icon: TranslateIcon,
         id: 1,
-        title: 'Easy-Employ',
+        title: 'Languages',
     },
 
     {
+        icon: SchoolIcon,
         id: 1,
-        title: 'Easy-Employ',
+        title: 'Courses',
     },
 ]

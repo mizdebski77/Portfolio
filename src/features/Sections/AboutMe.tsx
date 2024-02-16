@@ -3,7 +3,7 @@ import { theme } from '../../core/theme';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { aboutInformations } from '../../common/Arrays/aboutSections';
-
+import SchoolIcon from '@mui/icons-material/School';
 export const About = () => {
 
     return (
@@ -33,7 +33,7 @@ export const About = () => {
                 margin='auto'
                 direction='row'
                 spacing={4}
-                maxWidth={1500}
+                maxWidth={1600}
                 justifyContent='space-evenly'
                 padding='40px'
             >
@@ -43,8 +43,10 @@ export const About = () => {
                         sx={{
                             background: 'rgba(255, 255, 255, 0.2)',
                             width: '100%',
-                            p: 4,
-                            borderRadius: 4
+                            py: 4,
+                            px: 2,
+                            borderRadius: 4,
+                            display: 'grid',
                         }}
                     >
                         <Typography
@@ -52,9 +54,11 @@ export const About = () => {
                             sx={{
                                 color: 'white',
                                 textAlign: 'center',
-                                fontSize: 28,
+                                fontSize: 32,
                             }}
-                        >{section.title}</Typography>
+                        >
+                            {section.title}
+                        </Typography>
                     </Paper>
                 ))}
             </Stack >
