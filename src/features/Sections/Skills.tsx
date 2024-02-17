@@ -26,7 +26,7 @@ export const Skills = () => {
             <Typography
                 variant='h1'
                 sx={{
-                    fontSize: 120,
+                    fontSize: 100,
                     mt: 12,
                     textAlign: 'center',
                     color: theme.palette.primary.contrastText,

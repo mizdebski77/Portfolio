@@ -1,6 +1,8 @@
 import SchoolIcon from '@mui/icons-material/School';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import TranslateIcon from '@mui/icons-material/Translate';
+
+
 export const aboutInformations = [
     {
         icon: HistoryEduIcon,
