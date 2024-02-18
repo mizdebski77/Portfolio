@@ -41,7 +41,6 @@ export const Home = () => {
                     sx={{ display: 'flex', alignItems: 'center', position: 'relative', }}>
                     <svg style={{ position: 'absolute', bottom: 0 }} />
                     <Box
-
                         sx={{
                             maxWidth: '550px',
                             width: '100%',

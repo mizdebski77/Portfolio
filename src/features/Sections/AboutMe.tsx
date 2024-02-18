@@ -1,4 +1,4 @@
-import { Box,  Typography, Stack, Paper } from '@mui/material';
+import { Box, Typography, Stack, Paper } from '@mui/material';
 import { theme } from '../../core/theme';
 import { aboutInformations } from '../../common/Arrays/aboutSections';
 export const About = () => {
@@ -44,6 +44,9 @@ export const About = () => {
                             px: 2,
                             borderRadius: 4,
                             display: 'grid',
+                            border: 1,
+                            borderColor: theme.palette.primary.contrastText,
+                            boxShadow: '10px -10px 20px #3c4601',
                         }}
                     >
                         <Typography
