@@ -1,4 +1,4 @@
-import { Box, Typography, Stack, Paper } from '@mui/material';
+import { Box, Typography, Stack } from '@mui/material';
 import { theme } from '../../../../core/theme';
 import { aboutInformations } from '../../../../common/Arrays/aboutSections';
 import { Tile } from './styledAbout';
