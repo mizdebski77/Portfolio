@@ -62,12 +62,12 @@ export const Skills = () => {
                             justifyContent: 'center',
                             flexDirection: 'column',
                             background: 'rgba(255, 255, 255, 0.1 ) ',
-                            width: '180px',
-                            height: '180px',
-                            py: 4,
-                            px: 2,
+                            width: '140px',
+                            height: '140px',
+                            py: 2,
+                            px: 1,
                             border: 1,
-                            borderRadius: 2,
+                            borderRadius: 4,
                             borderColor: 'white',
                             transition: "transform 0.3s ease-in-out",
                             boxShadow: '0 0 10px white',
@@ -80,8 +80,8 @@ export const Skills = () => {
                         <SvgIcon
                             sx={{
                                 color: theme.palette.primary.contrastText,
-                                width: '64px',
-                                height: '64px',
+                                width: '52px',
+                                height: '52px',
                                 margin: 'auto'
                             }}
                         >
@@ -90,9 +90,9 @@ export const Skills = () => {
                         <Typography
                             component='span'
                             sx={{
-                                color: theme.palette.primary.light,
+                                color: 'white',
                                 textAlign: 'center',
-                                fontSize: 20
+                                fontSize: 16
                             }}
                         >
                             {skill.text}

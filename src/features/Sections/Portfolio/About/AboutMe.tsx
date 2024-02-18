@@ -1,7 +1,10 @@
 import { Box, Typography, Stack, Paper } from '@mui/material';
-import { theme } from '../../core/theme';
-import { aboutInformations } from '../../common/Arrays/aboutSections';
+import { theme } from '../../../../core/theme';
+import { aboutInformations } from '../../../../common/Arrays/aboutSections';
+import { Tile } from './styledAbout';
 export const About = () => {
+
+
 
     return (
         <Box
@@ -35,20 +38,7 @@ export const About = () => {
                 padding='40px'
             >
                 {aboutInformations.map((section) => (
-                    <Paper
-                        key={section.id}
-                        sx={{
-                            background: 'rgba(255, 255, 255, 0.2)',
-                            width: '100%',
-                            py: 4,
-                            px: 2,
-                            borderRadius: 4,
-                            display: 'grid',
-                            border: 1,
-                            borderColor: theme.palette.primary.contrastText,
-                            boxShadow: '10px -10px 20px #3c4601',
-                        }}
-                    >
+                    <Tile>
                         <Typography
                             variant='h2'
                             sx={{
@@ -59,7 +49,7 @@ export const About = () => {
                         >
                             {section.title}
                         </Typography>
-                    </Paper>
+                    </Tile>
                 ))}
             </Stack >
 
