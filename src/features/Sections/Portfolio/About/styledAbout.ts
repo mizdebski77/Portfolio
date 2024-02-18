@@ -10,7 +10,8 @@ export const Tile = styled.div`
 border-radius: 10px;
 backdrop-filter: blur(3px);
 overflow: hidden;
-
+width: 100%;
+padding: 40px;
 
 &::before {
     content: '';
@@ -22,7 +23,7 @@ overflow: hidden;
     height: 200%;
     background-position: 0 0;
     background-image: conic-gradient(transparent, white, transparent 50%);
-    animation: ${rotate} 4s linear infinite; 
+    animation: ${rotate} 10s linear infinite; 
 };
 
 &::after {
