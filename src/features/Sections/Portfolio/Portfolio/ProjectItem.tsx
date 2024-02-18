@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import { theme } from '../../../core/theme';
+import { theme } from '../../../../core/theme';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { Image, List, ListItem } from './styledPortfolio';
 import { motion } from 'framer-motion';
-import { variantText, variantTitle } from '../../../common/animation';
+import { variantText, variantTitle } from '../../../../common/animation';
 import { useInView } from 'react-intersection-observer';
 
 interface ProjectItemProps {

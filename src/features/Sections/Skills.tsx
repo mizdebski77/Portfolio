@@ -5,7 +5,7 @@ import SvgIcon from '@mui/material/SvgIcon';
 import { motion } from 'framer-motion';
 import useInViewAnimation from '../../core/useInView';
 import { variantOpacity } from '../../common/animation';
-import xd from '../../common/Images/lines.svg';
+import lines from '../../common/Images/lines.svg';
 
 export const Skills = () => {
 
@@ -35,7 +35,7 @@ export const Skills = () => {
                 }}>
                 Tech Stack
             </Typography>
-            <img src={xd} style={{ position: 'absolute',  top: 0 }} />
+            <img src={lines} style={{ position: 'absolute',  top: 0 }} />
 
             <Container
                 maxWidth='xl'
