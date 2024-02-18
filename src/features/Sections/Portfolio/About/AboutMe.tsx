@@ -2,9 +2,9 @@ import { Box, Typography, Stack } from '@mui/material';
 import { theme } from '../../../../core/theme';
 import { aboutInformations } from '../../../../common/Arrays/aboutSections';
 import { Tile } from './styledAbout';
+import xd from '../../../../common/Images/rings.svg'
+
 export const About = () => {
-
-
 
     return (
         <Box
@@ -28,6 +28,8 @@ export const About = () => {
                 }}>
                 About Me
             </Typography>
+
+            <img src={xd} style={{ position: 'absolute',  top: 0 }} />
 
             <Stack
                 margin='auto'
