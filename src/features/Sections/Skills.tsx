@@ -35,7 +35,7 @@ export const Skills = () => {
                 }}>
                 Tech Stack
             </Typography>
-            <img src={lines} style={{ position: 'absolute', top: 0, }} alt='background' />
+            <img src={lines} style={{ position: 'absolute', top: 0, height:'cover' }} alt='background' />
 
             <Container
                 maxWidth='xl'

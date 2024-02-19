@@ -15,7 +15,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Part />
+      {/* <Part /> */}
       <AnimatedCursor
         innerSize={10}
         outerSize={30}
