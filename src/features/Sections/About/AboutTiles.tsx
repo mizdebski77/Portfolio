@@ -45,20 +45,21 @@ export const AboutTiles = () => {
                     </Tile>
                 ))}
             </Stack >
-            <Slider
-                width="250px"
-                duration={40}
-                pauseOnHover={true}
-                blurBorders={false}
-                blurBoderColor={'#fff'}
-            >
-                {Languages.map((language) => (
-                    <Slider.Slide>
-                        <span>{language.name} / {language.level} </span>
-                        <img src={language.icon} alt="any" />
-                    </Slider.Slide>
-                ))}
-            </Slider>
+            <Box sx={{ maxWidth: 1600, margin: 'auto', p: 4 }}>
+                <Slider
+                    width="400px"
+                    duration={20}
+                    pauseOnHover={true}
+                    blurBorders={false}
+                >
+                    {Languages.map((language) => (
+                        <Stack spacing={2} direction='row' alignItems='center'>
+                            <img style={{ width: 80 }} src={language.icon} alt="any" />
+                            <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: 24, fontWeight: 'bold' }}>{language.name} / {language.level} </Typography >
+                        </Stack>
+                    ))}
+                </Slider>
+            </Box>
         </Box>
     );
 };
