@@ -2,7 +2,7 @@ import { Box, Typography, Stack } from '@mui/material';
 import { Tile } from './styledAbout';
 import { aboutInformations } from '../../../common/Arrays/aboutSections';
 import { theme } from '../../../core/theme';
-import lines from '../../../common/Images/lines.svg';
+import lines from '../../../common/Images/rings.svg';
 
 export const About = () => {
 
@@ -29,7 +29,7 @@ export const About = () => {
                 About Me
             </Typography>
 
-            <img src={lines} style={{ position: 'absolute', top: 0 }} alt='background' />
+            <img src={lines} style={{ position: 'absolute', top: 0 }} alt='xd' />
 
             <Stack
                 margin='auto'

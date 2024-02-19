@@ -2,6 +2,7 @@ import { Box, Container, Typography } from '@mui/material';
 import { ProjectItem } from './ProjectItem';
 import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
+import lines from '../../../common/Images/PortfolioLines.svg';
 
 export const Portfolio = () => {
     return (
@@ -26,6 +27,7 @@ export const Portfolio = () => {
                 }}>
                 Portfolio
             </Typography>
+            <img src={lines} style={{ position: 'absolute', top: 0 }} alt='background' />
 
             <Container
                 maxWidth='xl'
