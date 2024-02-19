@@ -5,9 +5,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from "./theme";
 import AnimatedCursor from 'react-animated-cursor';
 import { Skills } from "../features/Sections/Skills";
-import { About } from "../features/Sections/Portfolio/About/AboutMe";
-import { Portfolio } from "../features/Sections/Portfolio/Portfolio/Portfolio";
 import Part from "../common/particles.";
+import { Portfolio } from "../features/Sections/Portfolio/Portfolio";
+import { About } from "../features/Sections/About/AboutMe";
 
 
 

@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from '@mui/material';
-import { theme } from '../../../../core/theme';
-import { projects } from '../../../../common/Arrays/porfolio';
 import { ProjectItem } from './ProjectItem';
+import { theme } from '../../../core/theme';
+import { projects } from '../../../common/Arrays/porfolio';
 
 export const Portfolio = () => {
     return (
