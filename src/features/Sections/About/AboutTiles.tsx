@@ -1,13 +1,18 @@
-import { Grid, Stack, SvgIcon, Typography, Box } from '@mui/material';
+import { Grid, Stack, Typography, Box } from '@mui/material';
 import { Languages, aboutInformations } from '../../../common/Arrays/aboutSections';
 import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
 import Slider from 'react-infinite-logo-slider'
+import { motion } from 'framer-motion';
+import { variantOpacity } from '../../../common/animation';
+import useInViewAnimation from '../../../core/useInView';
 
 export const AboutTiles = () => {
+
+    const { animation, ref } = useInViewAnimation(0.2);
+
     return (
         <Box>
-
             <Stack
                 margin='auto'
                 maxWidth={1600}
@@ -16,9 +21,18 @@ export const AboutTiles = () => {
                 direction='row'
                 spacing={2}
             >
-
                 {aboutInformations.map((section) => (
-                    <Tile key={section.id}>
+                    <Tile
+                        ref={ref}
+                        key={section.id}
+                        as={motion.div}
+                        variants={variantOpacity}
+                        initial="hidden"
+                        animate={animation}
+                        transition={{
+                            duration: 0.8, delay: section.id * 0.2, ease: 'linear'
+                        }}
+                    >
                         <Typography
                             variant='h2'
                             sx={{

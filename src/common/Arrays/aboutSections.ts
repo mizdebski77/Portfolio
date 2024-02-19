@@ -25,7 +25,7 @@ export const aboutInformations = [
     },
 
     {
-        id: 1,
+        id: 2,
         title: 'Courses',
         icon: ReceiptLongIcon,
         informations: [

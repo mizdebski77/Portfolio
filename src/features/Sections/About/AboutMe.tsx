@@ -1,5 +1,4 @@
-import { Box, Typography, Stack } from '@mui/material';
-import { Tile } from './styledAbout';
+import { Box, Typography } from '@mui/material';
 import { theme } from '../../../core/theme';
 import lines from '../../../common/Images/rings.svg';
 import { AboutTiles } from './AboutTiles';
