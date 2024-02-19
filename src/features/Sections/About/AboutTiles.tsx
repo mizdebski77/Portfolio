@@ -22,10 +22,23 @@ export const AboutTiles = () => {
                             color: 'white',
                             textAlign: 'center',
                             fontSize: 32,
-                        }}
-                    >
+                        }}>
                         {section.title}
                     </Typography>
+                    {section.informations.map((xd) => (
+                        <div>
+                            <Typography>
+                                {xd.title}
+                            </Typography>
+
+                            {xd.years !== '' ? (
+                                <Typography>
+                                    {xd.years}
+                                </Typography>
+                            ) : null}
+                        </div>
+                    ))}
+
                 </Tile>
             ))
             }

@@ -23,7 +23,7 @@ padding: 40px;
     height: 200%;
     background-position: 0 0;
     background-image: conic-gradient(transparent, white, transparent 50%);
-    animation: ${rotate} 10s linear infinite; 
+    animation: ${rotate} 5s linear infinite; 
 };
 
 &::after {
