@@ -4,7 +4,7 @@ import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
 import Slider from 'react-infinite-logo-slider'
 import { motion } from 'framer-motion';
-import { variantOpacity } from '../../../common/animation';
+import { variantOpacity, variantText } from '../../../common/animation';
 import useInViewAnimation from '../../../core/useInView';
 
 export const AboutTiles = () => {
@@ -59,7 +59,14 @@ export const AboutTiles = () => {
                     </Tile>
                 ))}
             </Stack >
-            <Box sx={{ maxWidth: 1600, margin: 'auto', p: 4 }}>
+            <Box
+                sx={{ maxWidth: 1600, margin: 'auto', p: 4 }}
+                component={motion.div}
+                ref={ref}
+                variants={variantText}
+                initial="hidden"
+                animate={animation}
+            >
                 <Slider
                     width="400px"
                     duration={20}
