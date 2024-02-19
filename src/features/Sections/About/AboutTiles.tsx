@@ -55,7 +55,7 @@ export const AboutTiles = () => {
                     {Languages.map((language) => (
                         <Stack spacing={2} direction='row' alignItems='center'>
                             <img style={{ width: 80 }} src={language.icon} alt="any" />
-                            <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: 24, fontWeight: 'bold' }}>{language.name} / {language.level} </Typography >
+                            <Typography component='span' sx={{ color: 'white', fontSize: 24, fontWeight: 'bold' }}>{language.name} / {language.level} </Typography >
                         </Stack>
                     ))}
                 </Slider>
