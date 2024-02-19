@@ -11,7 +11,8 @@ border-radius: 10px;
 backdrop-filter: blur(3px);
 overflow: hidden;
 width: 100%;
-padding: 40px;
+padding: 40px 20px;
+display: grid;
 
 &::before {
     content: '';
