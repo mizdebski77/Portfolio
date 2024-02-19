@@ -9,10 +9,11 @@ export const AboutTiles = () => {
 
         <Stack
             margin='auto'
-            maxWidth={1200}
+            maxWidth={1600}
             justifyContent='space-evenly'
             padding='40px'
             direction='row'
+            spacing={2}
         >
 
             {aboutInformations.map((section) => (
@@ -22,28 +23,23 @@ export const AboutTiles = () => {
                         sx={{
                             color: 'white',
                             textAlign: 'center',
-                            fontSize: 32,
+                            fontSize: 36,
                         }}>
                         {section.title}
                     </Typography>
                     {section.informations.map((information) => (
-                        <Stack direction='row' spacing={2} alignItems='center'>
-                            <img src={information.icon} style={{ width: 40, height: 40 }} />
-                            <Grid>
-                                <Typography sx={{ color: theme.palette.primary.contrastText, fontSize: 24 }}>
-                                    {information.title} /
-                                    <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: 20, marginLeft: 1 }}>
-                                        {information.description}
-                                    </Typography>
+                        <Grid sx={{ borderBottom: 1, borderColor: theme.palette.primary.light, p: 2 }}>
+                            <Typography sx={{ color: theme.palette.primary.contrastText, fontSize: 24 }}>
+                                {information.title} 
+                                <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: 20, marginLeft: 1 }}>
+                                    {information.description}
                                 </Typography>
+                            </Typography>
 
-                                {information.years !== '' ? (
-                                    <Typography sx={{ color: theme.palette.primary.light, fontSize: 20 }}>
-                                        {information.years}
-                                    </Typography>
-                                ) : null}
-                            </Grid>
-                        </Stack>
+                            <Typography sx={{ color: theme.palette.primary.light, fontSize: 20 }}>
+                                {information.years}
+                            </Typography>
+                        </Grid>
                     ))}
                 </Tile>
 

@@ -26,32 +26,6 @@ export const aboutInformations = [
                 icon: uni,
             },
         ]
-
-    },
-
-    {
-        id: 1,
-        title: 'Languages',
-        informations: [
-            {
-                title: 'Polish',
-                description: 'Native',
-                icon: pl,
-                years: ''
-            },
-            {
-                title: 'English',
-                description: 'B2',
-                icon: eng,
-                years: ''
-            },
-            {
-                title: 'German',
-                description: 'A2',
-                icon: ger,
-                years: ''
-            },
-        ]
     },
 
     {
@@ -59,23 +33,19 @@ export const aboutInformations = [
         title: 'Courses',
         informations: [
             {
-                title: 'YouCode',
+                title: 'YouCode / ',
                 description: 'Frontend Developer Course',
                 years: '10.2022 – 02.2023',
                 icon: coe,
-
             },
-
             {
-                title: 'ProfiLingua Language School',
+                title: 'ProfiLingua Language School / ',
                 description: ' German language School',
                 years: '09.2018 – 09.2019',
                 icon: coe,
-
             },
-
             {
-                title: 'IMPULS Center for Foreign Languages',
+                title: 'IMPULS Center for Foreign Languages / ',
                 description: 'English course',
                 years: '03.2012 – 03.2015',
                 icon: coe,

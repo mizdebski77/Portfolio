@@ -2,7 +2,7 @@ import { Box, Typography, Stack } from '@mui/material';
 import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
 import lines from '../../../common/Images/rings.svg';
-import { AboutTiles } from './aboutTiles';
+import { AboutTiles } from './AboutTiles';
 
 export const About = () => {
 
