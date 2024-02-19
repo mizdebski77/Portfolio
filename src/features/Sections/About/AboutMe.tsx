@@ -1,8 +1,8 @@
 import { Box, Typography, Stack } from '@mui/material';
 import { Tile } from './styledAbout';
-import { aboutInformations } from '../../../common/Arrays/aboutSections';
 import { theme } from '../../../core/theme';
 import lines from '../../../common/Images/rings.svg';
+import { AboutTiles } from './AboutTiles';
 
 export const About = () => {
 
@@ -28,33 +28,8 @@ export const About = () => {
                 }}>
                 About Me
             </Typography>
-
             <img src={lines} style={{ position: 'absolute', top: 0, height: 'cover', bottom: 0, }} alt='xd' />
-
-            <Stack
-                margin='auto'
-                direction='row'
-                spacing={4}
-                maxWidth={1600}
-                justifyContent='space-evenly'
-                padding='40px'
-            >
-                {aboutInformations.map((section) => (
-                    <Tile>
-                        <Typography
-                            variant='h2'
-                            sx={{
-                                color: 'white',
-                                textAlign: 'center',
-                                fontSize: 32,
-                            }}
-                        >
-                            {section.title}
-                        </Typography>
-                    </Tile>
-                ))}
-            </Stack >
-
+            <AboutTiles />
         </Box >
     );
 };
