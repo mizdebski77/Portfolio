@@ -1,5 +1,6 @@
 import SchoolIcon from '@mui/icons-material/School';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import pl from '../Images/AboutMeImages/poland.svg';
 
 export const aboutInformations = [
     {
@@ -43,4 +44,27 @@ export const aboutInformations = [
             },
         ]
     },
+]
+
+export const Languages = [
+    {
+        id: 1,
+        name: 'Polish',
+        level: 'Native',
+        icon: pl
+    },
+
+    {
+        id: 2,
+        name: 'English',
+        level: 'B2',
+        icon: pl
+    },
+
+    {
+        id: 3,
+        name: 'German',
+        level: 'A2',
+        icon: pl
+    }
 ]
