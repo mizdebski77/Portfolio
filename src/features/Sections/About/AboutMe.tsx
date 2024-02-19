@@ -29,7 +29,7 @@ export const About = () => {
                 About Me
             </Typography>
 
-            <img src={lines} style={{ position: 'absolute', top: 0, height: 'cover' }} alt='xd' />
+            <img src={lines} style={{ position: 'absolute', top: 0, height: 'cover', bottom: 0, }} alt='xd' />
 
             <Stack
                 margin='auto'
