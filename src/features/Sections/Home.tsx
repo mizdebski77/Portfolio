@@ -32,7 +32,6 @@ export const Home = () => {
                 }}
             >
 
-
                 <Box
                     component={motion.div}
                     variants={containerVariants}

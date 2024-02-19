@@ -33,7 +33,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         if (screenWidth < 768) {
             return '0px 0px -20% 0px';
         } else {
-            return '0px 0px -30% 0px';
+            return '0px 0px -28% 0px';
         }
     }
 
