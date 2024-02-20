@@ -33,7 +33,7 @@ export const Portfolio = () => {
                 }}>
                 Portfolio
             </Typography>
-            <img src={lines} style={{ position: 'absolute', top: 0, height: 'cover', }} alt='background' />
+            <img src={lines} style={{ position: 'absolute', top: 0, height: isMdScreen ? '0' : 'cover', }} alt='background' />
 
             <Container
                 maxWidth='xl'

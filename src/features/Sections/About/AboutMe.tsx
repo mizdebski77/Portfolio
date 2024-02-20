@@ -29,7 +29,7 @@ export const About = () => {
                 }}>
                 About Me
             </Typography>
-            <img src={lines} style={{ position: 'absolute', top: 0, height: 'cover', }} alt='xd' />
+            <img src={lines} style={{ position: 'absolute', top: 0, height: isMdScreen ? '0' : 'cover', }} alt='xd' />
             <AboutTiles />
         </Box >
     );
