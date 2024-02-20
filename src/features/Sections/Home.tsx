@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography, useMediaQuery, useTheme } from "@mui/material";
 import profile from '../../common/Images/profile.png';
 import { Blob } from "../Blob";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
@@ -11,6 +11,9 @@ import { containerVariants, variantButton, variantText, variantTitle } from "../
 import { theme } from "../../core/theme";
 
 export const Home = () => {
+
+    const theme = useTheme();
+    const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
 
     return (
@@ -61,7 +64,7 @@ export const Home = () => {
                     <Blob />
                 </Box>
 
-                <Grid2 display='grid' alignItems='center' sx={{ gap: 1 }}  >
+                <Grid2 display='grid' alignItems='center' sx={{ gap: 1, p:2 }}  >
                     <Typography
                         component={motion.h2}
                         variants={variantTitle}
@@ -92,7 +95,7 @@ export const Home = () => {
                         variant="h3"
                         sx={{
                             color: 'primary.light',
-                            fontSize: 24,
+                            fontSize: isSmScreen ? 16 : 24,
                             maxWidth: 780,
                             textAlign: "justify"
                         }}>

@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography, Box } from '@mui/material';
+import { Grid, Stack, Typography, Box, useTheme, useMediaQuery } from '@mui/material';
 import { Languages, aboutInformations } from '../../../common/Arrays/aboutSections';
 import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
@@ -11,14 +11,18 @@ export const AboutTiles = () => {
 
     const { animation, ref } = useInViewAnimation(0.2);
 
+    const theme = useTheme();
+    const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
+
     return (
         <Box>
             <Stack
                 margin='auto'
                 maxWidth={1600}
                 justifyContent='space-evenly'
-                padding='40px'
-                direction='row'
+                padding={isSmScreen ? '20px' : '40px'}
+                direction={isMdScreen ? 'column' : 'row'}
                 spacing={2}
             >
                 {aboutInformations.map((section) => (
@@ -38,20 +42,20 @@ export const AboutTiles = () => {
                             sx={{
                                 color: 'white',
                                 textAlign: 'center',
-                                fontSize: 36,
+                                fontSize: isSmScreen ? 28 : 36,
                             }}>
                             <section.icon />  {section.title}
                         </Typography>
                         {section.informations.map((information) => (
-                            <Grid key={information.title} sx={{ borderBottom: 1, borderColor: theme.palette.primary.light, p: 2 }}>
-                                <Typography sx={{ color: theme.palette.primary.contrastText, fontSize: 24 }}>
+                            <Grid key={information.title} sx={{ borderBottom: 1, borderColor: theme.palette.primary.light, p: isSmScreen ? 1 : 2 }}>
+                                <Typography sx={{ color: theme.palette.primary.contrastText, fontSize: isSmScreen ? 18 : 24 }}>
                                     {information.title}
-                                    <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: 20, marginLeft: 1 }}>
+                                    <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 14 : 20, marginLeft: 1 }}>
                                         {information.description}
                                     </Typography>
                                 </Typography>
 
-                                <Typography sx={{ color: theme.palette.primary.light, fontSize: 20 }}>
+                                <Typography sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 14 : 24 }}>
                                     {information.years}
                                 </Typography>
                             </Grid>
@@ -68,20 +72,20 @@ export const AboutTiles = () => {
                 animate={animation}
             >
                 <Slider
-                    width="400px"
+                    width={isSmScreen ? "200px" : "400px"}
                     duration={20}
                     pauseOnHover={true}
                     blurBorders={false}
                 >
                     {Languages.map((language) => (
                         <Stack spacing={2} direction='row' alignItems='center'>
-                            <img style={{ width: 80 }} src={language.icon} alt="any" />
-                            <Typography component='span' sx={{ color: 'white', fontSize: 24, fontWeight: 'bold' }}>{language.name} / {language.level} </Typography >
+                            <img style={{ width: isSmScreen ? 54 : 80 }} src={language.icon} alt="any" />
+                            <Typography component='span' sx={{ color: 'white', fontSize: isSmScreen ? 16 : 24, fontWeight: 'bold' }}>{language.name} / {language.level} </Typography >
                         </Stack>
                     ))}
                 </Slider>
             </Box>
-        </Box>
+        </Box >
     );
 };
 
