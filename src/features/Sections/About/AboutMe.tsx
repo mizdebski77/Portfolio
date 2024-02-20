@@ -1,9 +1,11 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 import { theme } from '../../../core/theme';
 import lines from '../../../common/Images/rings.svg';
 import { AboutTiles } from './AboutTiles';
 
 export const About = () => {
+    const theme = useTheme();
+    const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <Box
@@ -19,7 +21,7 @@ export const About = () => {
             <Typography
                 variant='h1'
                 sx={{
-                    fontSize: 120,
+                    fontSize: isMdScreen ? 40 : 120,
                     mt: 12,
                     textAlign: 'center',
                     color: theme.palette.primary.contrastText,

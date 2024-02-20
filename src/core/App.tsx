@@ -26,9 +26,9 @@ function App() {
       />
       {/* <Navigation /> */}
       {/* <Home /> */}
-      <About />
-      {/* <Skills />
-      <Portfolio />  */}
+      {/* <About /> */}
+      <Skills />
+      {/* <Portfolio /> */}
 
     </ThemeProvider>
 
