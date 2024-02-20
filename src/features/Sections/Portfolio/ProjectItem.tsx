@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { Image, List, ListItem } from './styledPortfolio';
@@ -22,6 +22,11 @@ interface ProjectItemProps {
 }
 export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 
+    const theme = useTheme();
+    const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
+
+
     const [ref, inView] = useInView({
         triggerOnce: true,
         rootMargin: calculateRootMargin(),
@@ -40,35 +45,41 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     return (
         <Stack
             key={project.id}
-            direction={project.id % 2 === 0 ? 'row-reverse' : 'row'}
+            direction={
+                isMdScreen ? 'column' : (project.id % 2 === 0 ? 'row-reverse' : 'row')
+            }
             spacing={4}
             maxWidth={1500}
         >
-            <Link
-                component={motion.a}
-                initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: project.id % 2 === 0 ? '40vh' : '-40vh' }}
-                transition={{ duration: 0.5, type: "spring", }}
-                href={project.liveUrl}
-                target='_blank'
-                ref={ref}
-                sx={{
-                    borderColor: theme.palette.primary.light,
-                    borderRadius: 1,
-                    overflow: 'hidden',
-                    maxWidth: 600,
-                    display: 'flex',
-                    justifyContent: 'center',
-                    boxShadow: '0 0 10px white',
-                    transition: '0.4s',
+            <div style={{ margin: 'auto', }}>
+                <Link
+                    component={motion.a}
+                    initial={{ opacity: 0 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: project.id % 2 === 0 ? '40vh' : '-40vh' }}
+                    transition={{ duration: 0.5, type: "spring", }}
+                    href={project.liveUrl}
+                    target='_blank'
+                    ref={ref}
+                    sx={{
+                        borderColor: theme.palette.primary.light,
+                        borderRadius: 1,
+                        overflow: 'hidden',
+                        maxWidth: 600,
+                        width: '100%',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        boxShadow: '0 0 10px white',
+                        transition: '0.4s',
 
-                    '&:hover': {
-                        boxShadow: `0 0 40px ${theme.palette.primary.contrastText}`,
-                    },
-                }}
-            >
-                <Image src={project.image} alt='project' />
-            </Link>
+                        '&:hover': {
+                            boxShadow: `0 0 40px ${theme.palette.primary.contrastText}`,
+                        },
+                    }}
+                >
+                    <Image src={project.image} alt='project' />
+                </Link>
+            </div>
+
             <Box display='grid' gap={2} >
                 <Stack direction='row'
                     component={motion.div}
@@ -80,7 +91,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                         justifyContent: 'space-between',
                         alignItems: 'start',
                     }}>
-                    <Typography component='h3' color='white' fontSize={40}>
+                    <Typography component='h3' color='white' fontSize={isSmScreen ? 20 : 40}>
                         {project.name}
                     </Typography>
 
@@ -90,11 +101,11 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                                 href={project.codeUrl}
                                 target="_blank"
                                 sx={{
-                                    px: 3,
+                                    px: isSmScreen ? 2 : 3,
                                     py: 1,
                                     border: 1,
                                     borderColor: theme.palette.primary.contrastText,
-                                    fontSize: 18,
+                                    fontSize: isSmScreen ? 14 : 18,
                                     color: theme.palette.primary.contrastText,
                                     borderRadius: 20,
                                     textDecoration: 'none',
@@ -113,11 +124,11 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                             href={project.codeUrl}
                             target="_blank"
                             sx={{
-                                px: 3,
+                                px: isSmScreen ? 2 : 3,
                                 py: 1,
                                 background: theme.palette.primary.contrastText,
                                 color: theme.palette.primary.main,
-                                fontSize: 18,
+                                fontSize: isSmScreen ? 14 : 18,
                                 borderRadius: 20,
                                 textDecoration: 'none',
                                 transition: "background 0.4s, color 0.4s",
@@ -136,11 +147,11 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                                 href={project.APIlink}
                                 target="_blank"
                                 sx={{
-                                    px: 3,
+                                    px: isSmScreen ? 2 : 3,
                                     py: 1,
                                     border: 1,
                                     borderColor: theme.palette.primary.contrastText,
-                                    fontSize: 18,
+                                    fontSize: isSmScreen ? 14 : 18,
                                     color: theme.palette.primary.contrastText,
                                     borderRadius: 20,
                                     textDecoration: 'none',
@@ -165,15 +176,16 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                         maxWidth: 900,
                         background: 'rgba(255, 255, 255, 0.2)',
                         borderRadius: 2,
-                        p: 4,
+                        p: isMdScreen ? 2 : 4,
                         display: 'flex',
                         alignItems: 'center'
                     }}
                 >
-                    <Typography component='span'
+                    <Typography component='h3'
                         sx={{
                             color: theme.palette.primary.light,
-                            fontSize: 20,
+                            fontSize: isSmScreen ? 16 : 20,
+                            textAlign: 'justify'
                         }}
                     >
                         {project.description}

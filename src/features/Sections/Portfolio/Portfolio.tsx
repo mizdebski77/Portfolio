@@ -1,10 +1,15 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { ProjectItem } from './ProjectItem';
 import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
 import lines from '../../../common/Images/PortfolioLines.svg';
 
 export const Portfolio = () => {
+
+    const theme = useTheme();
+    const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
+
     return (
         <Box
             id='portfolio'
@@ -20,7 +25,7 @@ export const Portfolio = () => {
             <Typography
                 variant='h1'
                 sx={{
-                    fontSize: 120,
+                    fontSize: isMdScreen ? 40 : 110,
                     mt: 12,
                     textAlign: 'center',
                     color: theme.palette.primary.contrastText,
@@ -36,7 +41,7 @@ export const Portfolio = () => {
                     px: 4,
                     py: 12,
                     display: 'grid',
-                    gap: 20
+                    gap: isSmScreen ? 10 : 20
                 }}
             >
                 {projects.map((project) => (
