@@ -28,7 +28,7 @@ export const Home = () => {
                 maxWidth='xl'
                 sx={{
                     width: '100%',
-                    // position: 'fixed',
+                    position: isMdScreen ? '' : 'fixed',
                     display: "flex",
                     justifyContent: isMdScreen ? 'center' : "space-between",
                     alignItems: "center",

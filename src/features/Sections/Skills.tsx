@@ -21,9 +21,9 @@ export const Skills = () => {
             sx={{
                 minHeight: '100vh',
                 top: 0,
-                position: 'sticky',
+                position: isMdScreen ? '' : 'sticky',
                 width: '100%',
-                background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
+                background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
                 pt: 4,
                 overflow: 'hidden'
             }}>
@@ -39,7 +39,7 @@ export const Skills = () => {
                 }}>
                 Tech Stack
             </Typography>
-            <img src={lines} style={{ position: 'absolute', top: 0, height: isSmScreen ? '100vh' : '', }} alt='background' />
+            <img src={lines} style={{ position: 'absolute', top: 0, height: 'cover' }} alt='background' />
 
             <Container
                 maxWidth='xl'

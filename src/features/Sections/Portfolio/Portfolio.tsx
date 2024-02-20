@@ -15,10 +15,10 @@ export const Portfolio = () => {
             id='portfolio'
             sx={{
                 minHeight: '100vh',
-                position: 'sticky',
+                position: isMdScreen ? '' : 'sticky',
                 width: '100%',
-                background: 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
                 pt: 4,
+                background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
                 overflow: 'hidden'
             }}>
 
