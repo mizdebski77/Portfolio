@@ -14,6 +14,7 @@ export const Home = () => {
 
     const theme = useTheme();
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
 
 
     return (
@@ -27,11 +28,13 @@ export const Home = () => {
                 maxWidth='xl'
                 sx={{
                     width: '100%',
-                    position: 'fixed',
+                    // position: 'fixed',
                     display: "flex",
-                    justifyContent: "space-between",
+                    justifyContent: isMdScreen ? 'center' : "space-between",
                     alignItems: "center",
-                    height: '100vh',
+                    minHeight: '100vh',
+                    gap: isSmScreen ? 4 : 20,
+                    flexDirection: isMdScreen ? 'column' : '',
                 }}
             >
 
@@ -44,7 +47,7 @@ export const Home = () => {
                     <svg style={{ position: 'absolute', bottom: 0 }} />
                     <Box
                         sx={{
-                            maxWidth: '550px',
+                            maxWidth: isMdScreen ? '240px' : '550px',
                             width: '100%',
                             position: "sticky",
                             overflow: "hidden",
@@ -59,19 +62,19 @@ export const Home = () => {
                             borderRadius: '50%'
                         }}
                     >
-                        <img src={profile} alt="Profile" />
+                        <img src={profile} alt="Profile" style={{ maxWidth: 600, width: '100%' }} />
                     </Box>
                     <Blob />
                 </Box>
 
-                <Grid2 display='grid' alignItems='center' sx={{ gap: 1, p:2 }}  >
+                <Grid2 display='grid' alignItems='center' sx={{ gap: 1, p: 2 }}  >
                     <Typography
                         component={motion.h2}
                         variants={variantTitle}
                         initial="hidden"
                         animate="visible"
                         variant="h2"
-                        sx={{ color: 'white', fontSize: 40 }}
+                        sx={{ color: 'white', fontSize: isSmScreen ? 24 : 40 }}
                     >
                         Hello I'm Marcin Izdebski
                     </Typography>
@@ -83,7 +86,7 @@ export const Home = () => {
                         ]}
                         wrapper="h1"
                         speed={4}
-                        style={{ fontSize: 88, display: 'inline-block', color: '#bcdb02', margin: 0 }}
+                        style={{ fontSize: isSmScreen ? 32 : 88, display: 'inline-block', color: '#bcdb02', margin: 0 }}
                         repeat={Infinity}
                     />
 
@@ -97,6 +100,7 @@ export const Home = () => {
                             color: 'primary.light',
                             fontSize: isSmScreen ? 16 : 24,
                             maxWidth: 780,
+                            width: '100%',
                             textAlign: "justify"
                         }}>
                         I'm an enthusiastic Frontend Developer with a
@@ -109,11 +113,11 @@ export const Home = () => {
 
                     <Box
                         sx={{
-                            m: 4,
+                            m: isSmScreen ? 1 : 4,
                             display: 'flex',
                             justifyContent: 'space-evenly',
                             alignItems: 'center',
-                            px: 4
+                            px: isSmScreen ? 0 : 4
                         }}>
                         {socialLinks.map((link, index) => (
                             <Link
@@ -123,14 +127,16 @@ export const Home = () => {
                                 transition={{ duration: 1.5, delay: index * 0.2, type: "spring", }}
                                 href={link.href}
                                 target="_blank"
-                                sx={{ p: 0, }}
                                 key={index}
                             >
                                 <link.icon
                                     sx={{
                                         fontSize: '4rem',
-                                        border: 1, p: 1.5,
+                                        border: 1,
+                                        p: 1.5,
                                         borderRadius: '50%',
+                                        maxWidth: isSmScreen ? 52 : 64,
+                                        maxHeight: isSmScreen ? 52 : 64,
                                         background: theme.palette.primary.main,
                                         color: theme.palette.primary.contrastText,
                                         transition: "background 0.4s, color 0.4s",
@@ -151,12 +157,12 @@ export const Home = () => {
                         animate="visible"
                         variant="contained"
                         sx={{
-                            maxWidth: 200,
+                            maxWidth: isSmScreen ? 140 : 200,
                             width: '100%',
                             m: 'auto',
                             py: 1.25,
                             fontWeight: 600,
-                            fontSize: 16,
+                            fontSize: isSmScreen ? 12 : 16,
                             border: 1,
                             background: theme.palette.primary.contrastText,
                             color: theme.palette.primary.main,

@@ -25,10 +25,10 @@ function App() {
         outerScale={0}
       />
       {/* <Navigation /> */}
-      {/* <Home /> */}
-      {/* <About /> */}
-      {/* <Skills /> */}
-      <Portfolio />
+      <Home />
+      {/* <About />
+      <Skills />
+      <Portfolio /> */}
 
     </ThemeProvider>
 
