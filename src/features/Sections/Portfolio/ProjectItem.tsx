@@ -6,7 +6,7 @@ import { Image, List, ListItem } from './styledPortfolio';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { theme } from '../../../core/theme';
-import { variantText, variantTitle } from '../../../common/animation';
+import { variantText, variantTitle } from '../../../core/animation';
 
 interface ProjectItemProps {
     project: {

@@ -1,13 +1,13 @@
 import { Box, Container, Typography, useMediaQuery } from "@mui/material";
 import profile from '../../common/Images/profile.png';
-import { Blob } from "../Blob";
+import { Blob } from "../../core/Blob/Blob";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Link from '@mui/material/Link';
 import { socialLinks } from "../../common/Arrays/socialLinks";
 import Button from '@mui/material/Button';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
-import { containerVariants, variantButton, variantText, variantTitle } from "../../common/animation";
+import { containerVariants, variantButton, variantText, variantTitle } from "../../core/animation";
 import { theme } from "../../core/theme";
 
 export const Home = () => {

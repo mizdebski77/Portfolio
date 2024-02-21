@@ -4,7 +4,7 @@ import { skills, } from '../../common/Arrays/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
 import { motion } from 'framer-motion';
 import useInViewAnimation from '../../core/useInView';
-import { variantOpacity } from '../../common/animation';
+import { variantOpacity } from '../../core/animation';
 
 export const Skills = () => {
 

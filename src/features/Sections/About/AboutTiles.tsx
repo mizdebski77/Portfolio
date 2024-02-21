@@ -4,7 +4,7 @@ import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
 import Slider from 'react-infinite-logo-slider'
 import { motion } from 'framer-motion';
-import { variantOpacity, variantText } from '../../../common/animation';
+import { variantOpacity, variantText } from '../../../core/animation';
 import useInViewAnimation from '../../../core/useInView';
 
 export const AboutTiles = () => {

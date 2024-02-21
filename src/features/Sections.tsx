@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import { About } from './About/AboutMe';
-import { Skills } from './Skills';
-import { Portfolio } from './Portfolio/Portfolio';
-import bg from '../../common/Images/bg.svg';
+import { About } from './Sections/About/AboutMe';
+import { Skills } from './Sections/Skills';
+import { Portfolio } from './Sections/Portfolio/Portfolio';
+import bg from '../common/Images/bg.svg';
 
 export const Sections = () => {
     return (

@@ -1,12 +1,12 @@
 import { AppBar, Box, Toolbar, Typography, Stack, SvgIcon, useMediaQuery } from '@mui/material';
-import { navLinks } from './Arrays/navLinks';
-import { NavLink } from './Navigation/StyledNavbar';
+import { navLinks } from '../Arrays/navLinks';
+import { NavLink } from './StyledNavbar';
 import ComputerIcon from '@mui/icons-material/Computer';
-import { theme } from '../core/theme';
+import { theme } from '../../core/theme';
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Divide as Hamburger } from 'hamburger-react';
-import { mobileNavAnimation } from './animation';
+import { mobileNavAnimation } from '../../core/animation';
 import { Link } from 'react-scroll';
 
 export const Navigation = () => {
