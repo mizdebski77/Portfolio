@@ -80,7 +80,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             </div>
 
             <Box display='grid' gap={2} >
-                <Stack direction='row'
+                <Stack direction={isSmScreen ? 'column' : 'row'}
                     component={motion.div}
                     variants={variantTitle}
                     initial="hidden"
@@ -88,9 +88,10 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                     sx={{
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignItems: 'start',
+                        alignItems: isSmScreen ? 'center' : 'start',
+                        gap: isSmScreen ? 1 : 0
                     }}>
-                    <Typography component='h3' color='white' fontSize={isSmScreen ? 20 : 40}>
+                    <Typography component='h3' color='white' fontSize={isSmScreen ? 20 : 40} sx={{ textAlign: 'center' }}>
                         {project.name}
                     </Typography>
 

@@ -24,7 +24,7 @@ export const AboutTiles = () => {
                 direction={isMdScreen ? 'column' : 'row'}
                 spacing={2}
                 sx={{
-                    py: isSmScreen ? 6 : 8,
+                    py: isSmScreen ? 4 : 8,
                     pb: 1
                 }}
             >
@@ -51,9 +51,9 @@ export const AboutTiles = () => {
                         </Typography>
                         {section.informations.map((information) => (
                             <Grid key={information.title} sx={{ borderBottom: 1, borderColor: theme.palette.primary.light, p: isSmScreen ? 1 : 2 }}>
-                                <Typography sx={{ color: theme.palette.primary.contrastText, fontSize: isSmScreen ? 18 : 24 }}>
+                                <Typography sx={{ color: theme.palette.primary.contrastText, fontSize: isSmScreen ? 16 : 24 }}>
                                     {information.title}
-                                    <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 14 : 20, marginLeft: 1 }}>
+                                    <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 12 : 20, marginLeft: 1 }}>
                                         {information.description}
                                     </Typography>
                                 </Typography>

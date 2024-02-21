@@ -21,7 +21,7 @@ export const Home = () => {
             id='home'
             maxWidth='lg'
             sx={{
-                minHeight: isSmScreen ? '70vh' : '100vh',
+                minHeight: isSmScreen ? '70vh' : '100vh', pt: 10
             }}>
             <Box
                 maxWidth='xl'

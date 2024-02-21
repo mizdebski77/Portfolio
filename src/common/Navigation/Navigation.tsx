@@ -78,6 +78,7 @@ export const Navigation = () => {
                                 onClick={onLinkClick}
                                 key={index}
                                 spy={true}
+                                offset={-24}
                                 to={link.to}
                                 smooth={true}
                             >

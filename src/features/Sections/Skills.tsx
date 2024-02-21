@@ -44,7 +44,7 @@ export const Skills = () => {
                     position: 'relative',
                     gap: isSmScreen ? 3 : 6,
                     px: isSmScreen ? 2 : 4,
-                    py: isSmScreen ? 6 : 8
+                    py: isSmScreen ? 4 : 8,
                 }}>
                 {skills.map((skill, skillIndex) => (
                     <Paper
