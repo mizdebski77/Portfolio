@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Divide as Hamburger } from 'hamburger-react';
 import { mobileNavAnimation } from './animation';
+import { Link } from 'react-scroll';
 
 export const Navigation = () => {
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
@@ -28,14 +29,14 @@ export const Navigation = () => {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="fixed" sx={{ zIndex: 10 }}>
                     <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <Stack direction='row' alignItems='center' spacing={2}>
+                        <Link to='home' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 4 }} >
                             <SvgIcon sx={{ width: 40, height: 40 }}>
                                 <ComputerIcon />
                             </SvgIcon>
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontSize: 28, letterSpacing: 0 }}>
                                 Marcin <span style={{ color: theme.palette.primary.light }}>Izdebski</span>
                             </Typography>
-                        </Stack>
+                        </Link>
 
                         {!isSmScreen && (
                             <Stack direction='row' justifyContent='space-evenly' spacing={6}>
@@ -68,13 +69,14 @@ export const Navigation = () => {
                     exit="hidden"
                     variants={mobileNavAnimation}
                     sx={{
-                        background: 'rgba(255, 255, 255, 0.2)',
+                        background: 'rgba(16, 12, 4, 0.9)',
                         position: 'fixed',
                         width: '100%',
-                        zIndex: 1,
-                        display: isSmScreen ? '' : 'none'
+                        zIndex: 9,
+                        display: isSmScreen ? '' : 'none',
+                        pt: '60px'
                     }}>
-                    <Stack spacing={2}>
+                    <Stack spacing={2} justifyContent='center' alignItems='center'>
                         {navLinks.map((link, index) => (
                             <NavLink
                                 key={index}

@@ -15,12 +15,13 @@ export const NavLink = styled(Link)`
       border-bottom: 1px solid #bcdb02;
    };
 
-   @media (max-width:(750px)){
+   @media (max-width:750px){
       font-size: 16px;
       padding: 12px;
       width: 70%;
       margin: 0 auto;
       border-radius: 0;
       color: white;
+      text-align: center;
    };
 `;
