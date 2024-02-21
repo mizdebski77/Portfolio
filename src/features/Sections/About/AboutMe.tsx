@@ -4,7 +4,7 @@ import lines from '../../../common/Images/rings.svg';
 import { AboutTiles } from './AboutTiles';
 
 export const About = () => {
-    
+
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -12,12 +12,11 @@ export const About = () => {
         <Box
             id='about'
             sx={{
-                minHeight: isSmScreen ? '70vh' : '100vh',
-                top: 0,
-                position: isMdScreen ? '' : 'sticky',
+                minHeight: '70vh',
                 width: '100%',
-                background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                position: isMdScreen ? '' : 'relative',
+                zIndex: 1,
             }}>
             <Typography
                 variant='h1'
@@ -30,7 +29,6 @@ export const About = () => {
                 }}>
                 About Me
             </Typography>
-            <img src={lines} style={{ position: 'absolute', top: 0, height: isMdScreen ? '0' : 'cover', }} alt='xd' />
             <AboutTiles />
         </Box >
     );

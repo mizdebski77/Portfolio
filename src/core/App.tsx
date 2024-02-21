@@ -8,6 +8,7 @@ import { Skills } from "../features/Sections/Skills";
 import Part from "../common/particles.";
 import { Portfolio } from "../features/Sections/Portfolio/Portfolio";
 import { About } from "../features/Sections/About/AboutMe";
+import { Sections } from "../features/Sections/sectionts";
 
 
 
@@ -24,12 +25,9 @@ function App() {
         innerScale={0.6}
         outerScale={0}
       />
-      {/* <Navigation /> */}
+      <Navigation />
       <Home />
-      <About />
-      <Skills />
-      <Portfolio />
-
+      <Sections />
     </ThemeProvider>
 
   );

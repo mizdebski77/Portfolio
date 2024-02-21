@@ -13,12 +13,10 @@ export const Portfolio = () => {
         <Box
             id='portfolio'
             sx={{
-                minHeight: '100vh',
-                position: isMdScreen ? '' : 'sticky',
+                minHeight: '70vh',
                 width: '100%',
                 pt: 4,
-                background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
-                overflow: 'hidden'
+                overflow: 'hidden',
             }}>
 
             <Typography
@@ -32,7 +30,6 @@ export const Portfolio = () => {
                 }}>
                 Portfolio
             </Typography>
-            <img src={lines} style={{ position: 'absolute', top: 0, height: isMdScreen ? '0' : 'cover', }} alt='background' />
 
             <Container
                 maxWidth='xl'

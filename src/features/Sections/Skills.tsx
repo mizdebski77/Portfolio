@@ -18,11 +18,8 @@ export const Skills = () => {
         <Box
             id='skills'
             sx={{
-                minHeight: isSmScreen ? '70vh' : '100vh',
-                top: 0,
-                position: isMdScreen ? 'relative' : 'sticky',
+                minHeight: '70vh',
                 width: '100%',
-                background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
                 pt: 2,
                 overflow: 'hidden',
             }}>
@@ -38,7 +35,6 @@ export const Skills = () => {
                 }}>
                 Tech Stack
             </Typography>
-            <img src={lines} style={{ position: 'absolute', top: 0, height: isMdScreen ? '0%' : 'cover' }} alt='background' />
 
             <Container
                 maxWidth='lg'
