@@ -36,7 +36,8 @@ export const Portfolio = () => {
                     px: 4,
                     py: isSmScreen ? 6 : 8,
                     display: 'grid',
-                    gap: isSmScreen ? 10 : 20
+                    gap: isSmScreen ? 10 : 20,
+                    justifyContent: 'center',
                 }}
             >
                 {projects.map((project) => (

@@ -11,29 +11,28 @@ import { Link } from 'react-scroll';
 
 export const Navigation = () => {
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
+
     const [phoneNavbar, setPhoneNavbar] = useState(false);
 
     const togglePhoneNavbar = () => {
         setPhoneNavbar(!phoneNavbar);
     };
 
-
     const onLinkClick = () => {
         togglePhoneNavbar();
-        window.scrollTo(0, 0);
     };
 
     return (
         <>
-
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="fixed" sx={{ zIndex: 10 }}>
-                    <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <Link to='home' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 4 }} >
+                <AppBar position="fixed" sx={{ zIndex: 10, py: 1, }}>
+                    <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', }}>
+                        <Link to='home' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 8 }} >
                             <SvgIcon sx={{ width: 40, height: 40 }}>
                                 <ComputerIcon />
                             </SvgIcon>
-                            <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontSize: 28, letterSpacing: 0 }}>
+                            <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontSize: 28, letterSpacing: isMdScreen ? 1 : 6 }}>
                                 Marcin <span style={{ color: theme.palette.primary.light }}>Izdebski</span>
                             </Typography>
                         </Link>
@@ -50,17 +49,14 @@ export const Navigation = () => {
                                         {link.text}
                                     </NavLink>
                                 ))}
-
                             </Stack>
                         )}
-
                         <Box onClick={togglePhoneNavbar} sx={{ display: isSmScreen ? '' : 'none' }}>
                             <Hamburger color='#bcdb02' size={28} toggled={phoneNavbar} />
                         </Box>
                     </Toolbar>
                 </AppBar>
             </Box>
-
             <AnimatePresence>
                 <AppBar
                     component={motion.div}
@@ -79,6 +75,7 @@ export const Navigation = () => {
                     <Stack spacing={2} justifyContent='center' alignItems='center'>
                         {navLinks.map((link, index) => (
                             <NavLink
+                                onClick={onLinkClick}
                                 key={index}
                                 spy={true}
                                 to={link.to}
@@ -90,7 +87,6 @@ export const Navigation = () => {
 
                     </Stack>
                 </AppBar>
-
             </AnimatePresence>
         </>
     );
