@@ -121,7 +121,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                         ) : null}
 
                         <Link
-                            href={project.codeUrl}
+                            href={project.liveUrl}
                             target="_blank"
                             sx={{
                                 px: isSmScreen ? 2 : 3,
