@@ -70,7 +70,7 @@ export const Navigation = () => {
                         width: '100%',
                         zIndex: 9,
                         display: isSmScreen ? '' : 'none',
-                        pt: '60px'
+                        pt: '72px'
                     }}>
                     <Stack spacing={2} justifyContent='center' alignItems='center'>
                         {navLinks.map((link, index) => (
