@@ -19,14 +19,13 @@ export const Home = () => {
     return (
         <Container
             id='home'
-            maxWidth='xl'
+            maxWidth='lg'
             sx={{
-                minHeight: isSmScreen ? '70vh' : '100vh', 
+                minHeight: isSmScreen ? '70vh' : '100vh',
             }}>
             <Box
                 maxWidth='xl'
                 sx={{
-                    width: '100%',
                     position: isMdScreen ? '' : 'fixed',
                     display: "flex",
                     justifyContent: isMdScreen ? 'center' : "space-between",
