@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { Image, List, ListItem } from './styledPortfolio';
@@ -22,7 +22,6 @@ interface ProjectItemProps {
 }
 export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 
-    const theme = useTheme();
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
 

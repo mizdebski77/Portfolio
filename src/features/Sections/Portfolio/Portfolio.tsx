@@ -1,4 +1,4 @@
-import { Box, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery } from '@mui/material';
 import { ProjectItem } from './ProjectItem';
 import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
@@ -6,7 +6,6 @@ import lines from '../../../common/Images/PortfolioLines.svg';
 
 export const Portfolio = () => {
 
-    const theme = useTheme();
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
 

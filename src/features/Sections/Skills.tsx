@@ -1,4 +1,4 @@
-import { Box, Container, Paper, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Container, Paper, Typography, useMediaQuery } from '@mui/material';
 import { theme } from '../../core/theme';
 import { skills, } from '../../common/Arrays/skillset';
 import SvgIcon from '@mui/material/SvgIcon';
@@ -11,7 +11,6 @@ export const Skills = () => {
 
     const { animation, ref } = useInViewAnimation(0.2);
 
-    const theme = useTheme();
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
 

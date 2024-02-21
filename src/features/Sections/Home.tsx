@@ -1,4 +1,4 @@
-import { Box, Container, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Container, Typography, useMediaQuery } from "@mui/material";
 import profile from '../../common/Images/profile.png';
 import { Blob } from "../Blob";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
@@ -12,7 +12,6 @@ import { theme } from "../../core/theme";
 
 export const Home = () => {
 
-    const theme = useTheme();
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
 

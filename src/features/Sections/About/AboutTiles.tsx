@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography, Box, useTheme, useMediaQuery } from '@mui/material';
+import { Grid, Stack, Typography, Box, useMediaQuery } from '@mui/material';
 import { Languages, aboutInformations } from '../../../common/Arrays/aboutSections';
 import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
@@ -11,7 +11,6 @@ export const AboutTiles = () => {
 
     const { animation, ref } = useInViewAnimation(0.2);
 
-    const theme = useTheme();
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
 

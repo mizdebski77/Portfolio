@@ -1,10 +1,10 @@
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 import { theme } from '../../../core/theme';
 import lines from '../../../common/Images/rings.svg';
 import { AboutTiles } from './AboutTiles';
 
 export const About = () => {
-    const theme = useTheme();
+    
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
     const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
 

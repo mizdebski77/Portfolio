@@ -20,7 +20,7 @@ export const List = styled.ul`
     gap: 10px;
 
     @media (max-width: 600px) {
-        gap: 10px;
+        gap: 16px;
         justify-content:center;
     }
 `;
