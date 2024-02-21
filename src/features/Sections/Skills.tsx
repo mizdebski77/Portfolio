@@ -5,7 +5,6 @@ import SvgIcon from '@mui/material/SvgIcon';
 import { motion } from 'framer-motion';
 import useInViewAnimation from '../../core/useInView';
 import { variantOpacity } from '../../common/animation';
-import lines from '../../common/Images/lines.svg';
 
 export const Skills = () => {
 

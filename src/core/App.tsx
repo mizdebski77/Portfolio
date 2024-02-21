@@ -4,10 +4,7 @@ import { Home } from "../features/Sections/Home";
 import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from "./theme";
 import AnimatedCursor from 'react-animated-cursor';
-import { Skills } from "../features/Sections/Skills";
 import Part from "../common/particles.";
-import { Portfolio } from "../features/Sections/Portfolio/Portfolio";
-import { About } from "../features/Sections/About/AboutMe";
 import { Sections } from "../features/Sections/sectionts";
 
 
@@ -16,7 +13,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {/* <Part /> */}
+      <Part />
       <AnimatedCursor
         innerSize={10}
         outerSize={30}

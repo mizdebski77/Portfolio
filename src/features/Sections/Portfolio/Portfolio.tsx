@@ -2,7 +2,6 @@ import { Box, Container, Typography, useMediaQuery } from '@mui/material';
 import { ProjectItem } from './ProjectItem';
 import { theme } from '../../../core/theme';
 import { projects } from '../../../common/Arrays/porfolio';
-import lines from '../../../common/Images/PortfolioLines.svg';
 
 export const Portfolio = () => {
 

@@ -1,6 +1,5 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { theme } from '../../../core/theme';
-import lines from '../../../common/Images/rings.svg';
 import { AboutTiles } from './AboutTiles';
 
 export const About = () => {
