@@ -22,7 +22,7 @@ export const Home = () => {
             id='home'
             maxWidth='xl'
             sx={{
-                height: '100vh',
+                minHeight: isSmScreen ? '70vh' : '100vh',
             }}>
             <Box
                 maxWidth='xl'

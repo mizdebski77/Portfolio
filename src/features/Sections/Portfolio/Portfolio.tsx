@@ -26,10 +26,10 @@ export const Portfolio = () => {
                 variant='h1'
                 sx={{
                     fontSize: isMdScreen ? 40 : 110,
-                    mt: 12,
+                    mt: isSmScreen ? 6 : 12,
                     textAlign: 'center',
                     color: theme.palette.primary.contrastText,
-                    letterSpacing: 20,
+                    letterSpacing: isSmScreen ? 10 : 20,
                 }}>
                 Portfolio
             </Typography>
@@ -39,7 +39,7 @@ export const Portfolio = () => {
                 maxWidth='xl'
                 sx={{
                     px: 4,
-                    py: 12,
+                    py: isSmScreen ? 6 : 12,
                     display: 'grid',
                     gap: isSmScreen ? 10 : 20
                 }}

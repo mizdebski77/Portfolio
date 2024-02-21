@@ -19,23 +19,23 @@ export const Skills = () => {
         <Box
             id='skills'
             sx={{
-                minHeight: '100vh',
+                minHeight: isSmScreen ? '70vh' : '100vh',
                 top: 0,
                 position: isMdScreen ? 'relative' : 'sticky',
                 width: '100%',
                 background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
                 pt: 4,
-                overflow: 'hidden'
+                overflow: 'hidden',
             }}>
 
             <Typography
                 variant='h1'
                 sx={{
-                    fontSize: isMdScreen ? 40 : 110,
-                    mt: 12,
+                    fontSize: isMdScreen ? 36 : 110,
+                    mt: isMdScreen ? 6 : 12,
                     textAlign: 'center',
                     color: theme.palette.primary.contrastText,
-                    letterSpacing: 20,
+                    letterSpacing: isMdScreen ? 10 : 20,
                 }}>
                 Tech Stack
             </Typography>
@@ -50,7 +50,7 @@ export const Skills = () => {
                     position: 'relative',
                     gap: isSmScreen ? 3 : 6,
                     px: isSmScreen ? 2 : 4,
-                    py: isSmScreen ? 2 : 6
+                    py: isSmScreen ? 6 : 12
                 }}>
                 {skills.map((skill, skillIndex) => (
                     <Paper
@@ -61,7 +61,7 @@ export const Skills = () => {
                         initial="hidden"
                         animate={animation}
                         transition={{
-                            duration: 0.8, delay: skillIndex * 0.2, ease: 'linear'
+                            duration: 0.5, delay: skillIndex * 0.1, ease: 'linear'
                         }}
                         sx={{
                             display: 'flex',

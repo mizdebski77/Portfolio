@@ -6,26 +6,27 @@ import { AboutTiles } from './AboutTiles';
 export const About = () => {
     const theme = useTheme();
     const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
+    const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
         <Box
             id='about'
             sx={{
-                minHeight: '100vh',
+                minHeight: isSmScreen ? '70vh' : '100vh',
                 top: 0,
                 position: isMdScreen ? '' : 'sticky',
                 width: '100%',
                 background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
-                pt: 4,
+                overflow: 'hidden'
             }}>
             <Typography
                 variant='h1'
                 sx={{
                     fontSize: isMdScreen ? 40 : 120,
-                    mt: 12,
+                    mt: isSmScreen ? 6 : 12,
                     textAlign: 'center',
                     color: theme.palette.primary.contrastText,
-                    letterSpacing: 20,
+                    letterSpacing: isSmScreen ? 10 : 20,
                 }}>
                 About Me
             </Typography>

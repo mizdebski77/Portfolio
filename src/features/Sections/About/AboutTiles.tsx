@@ -24,6 +24,10 @@ export const AboutTiles = () => {
                 padding={isSmScreen ? '20px' : '40px'}
                 direction={isMdScreen ? 'column' : 'row'}
                 spacing={2}
+                sx={{
+                    py: isSmScreen ? 6 : 12,
+                    pb: 1
+                }}
             >
                 {aboutInformations.map((section) => (
                     <Tile
