@@ -24,7 +24,7 @@ export const AboutTiles = () => {
                 direction={isMdScreen ? 'column' : 'row'}
                 spacing={2}
                 sx={{
-                    py: isSmScreen ? 6 : 12,
+                    py: isSmScreen ? 6 : 8,
                     pb: 1
                 }}
             >

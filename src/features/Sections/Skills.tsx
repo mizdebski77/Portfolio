@@ -23,7 +23,7 @@ export const Skills = () => {
                 position: isMdScreen ? 'relative' : 'sticky',
                 width: '100%',
                 background: isMdScreen ? '' : 'linear-gradient(160deg, rgba(16,12,4,1) 57%, rgba(24,29,0,1) 100%)',
-                pt: 4,
+                pt: 2,
                 overflow: 'hidden',
             }}>
 
@@ -41,7 +41,7 @@ export const Skills = () => {
             <img src={lines} style={{ position: 'absolute', top: 0, height: isMdScreen ? '0%' : 'cover' }} alt='background' />
 
             <Container
-                maxWidth='xl'
+                maxWidth='lg'
                 sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -49,7 +49,7 @@ export const Skills = () => {
                     position: 'relative',
                     gap: isSmScreen ? 3 : 6,
                     px: isSmScreen ? 2 : 4,
-                    py: isSmScreen ? 6 : 12
+                    py: isSmScreen ? 6 : 8
                 }}>
                 {skills.map((skill, skillIndex) => (
                     <Paper

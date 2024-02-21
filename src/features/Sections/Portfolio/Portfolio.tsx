@@ -38,7 +38,7 @@ export const Portfolio = () => {
                 maxWidth='xl'
                 sx={{
                     px: 4,
-                    py: isSmScreen ? 6 : 12,
+                    py: isSmScreen ? 6 : 8,
                     display: 'grid',
                     gap: isSmScreen ? 10 : 20
                 }}
