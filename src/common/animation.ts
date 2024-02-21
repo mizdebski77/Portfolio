@@ -63,4 +63,21 @@ export const variantOpacity = {
     visible: {
         opacity: 1
     }
-}
+};
+
+export const mobileNavAnimation = {
+    hidden: {
+        y: "-100%",
+        opacity: 0,
+        transition: {
+            type: "tween",
+        },
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "tween",
+        },
+    },
+};

@@ -4,6 +4,7 @@ import { About } from './About/AboutMe';
 import { Skills } from './Skills';
 import { Portfolio } from './Portfolio/Portfolio';
 import bg from '../../common/Images/bg.svg';
+
 export const Sections = () => {
     return (
         <Box
@@ -14,7 +15,6 @@ export const Sections = () => {
             }}
         >
             <img src={bg} style={{ position: 'absolute', height: '100%', top: 0 }} alt='background' />
-
             <About />
             <Skills />
             <Portfolio />
