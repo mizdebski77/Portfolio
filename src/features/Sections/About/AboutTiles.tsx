@@ -81,7 +81,7 @@ export const AboutTiles = () => {
                     blurBorders={false}
                 >
                     {Languages.map((language) => (
-                        <Stack spacing={2} direction='row' alignItems='center'>
+                        <Stack spacing={2} direction='row' alignItems='center' key={language.name}>
                             <img style={{ width: isSmScreen ? 54 : 80 }} src={language.icon} alt="any" />
                             <Typography component='span' sx={{ color: 'white', fontSize: isSmScreen ? 16 : 24, fontWeight: 'bold' }}>{language.name} / {language.level} </Typography >
                         </Stack>
