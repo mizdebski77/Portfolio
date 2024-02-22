@@ -11,14 +11,14 @@ export const aboutInformations = [
         icon: SchoolIcon,
         informations: [
             {
-                title: 'Silesian University of Technology: Faculty of Automatic Control, Electronics and Computer Science.',
-                years: '2019 - 2023',
-                description: '',
+                title: 'Silesian University of Technology Faculty of Automatic Control, Electronics and Computer Science / ',
+                years: '10.2019 - 02.2023',
+                description: 'Engineer',
             },
 
             {
                 title: 'Technical School of Energy and Electronics them. Tadeusz Kościuszko No. 9 in Krakow',
-                years: '2015 - 2019',
+                years: '09.2015 - 06.2019',
                 description: '',
             },
         ]

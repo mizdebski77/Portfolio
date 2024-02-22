@@ -53,12 +53,12 @@ export const AboutTiles = () => {
                             <Grid key={information.title} sx={{ borderBottom: 1, borderColor: theme.palette.primary.light, p: isSmScreen ? 1 : 2 }}>
                                 <Typography sx={{ color: theme.palette.primary.contrastText, fontSize: isSmScreen ? 16 : 24 }}>
                                     {information.title}
-                                    <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 12 : 20, marginLeft: 1 }}>
+                                    <Typography component='span' sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 14 : 24, marginLeft: 1 }}>
                                         {information.description}
                                     </Typography>
                                 </Typography>
 
-                                <Typography sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 14 : 24 }}>
+                                <Typography sx={{ color: theme.palette.primary.light, fontSize: isSmScreen ? 12 : 20 }}>
                                     {information.years}
                                 </Typography>
                             </Grid>
