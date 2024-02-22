@@ -6,6 +6,8 @@ import wt from '../Images/Project/WeatherApp.png';
 import mb from '../Images/Project/MovieBorwser.png';
 import ca from '../Images/Project/Crud.png';
 import tl from '../Images/Project/tasksList.png';
+import df from '../Images/Project/Dish form.png';
+
 export const projects = [
     {
         id: 1,
@@ -144,6 +146,23 @@ export const projects = [
         image: tl,
         liveUrl: 'https://mizdebski77.github.io/Tasks-List-ReactJS/',
         codeUrl: 'https://github.com/mizdebski77/Tasks-List-ReactJS',
+        APIlink: '',
+    },
+
+    {
+        id: 9,
+        name: 'Dish Form',
+        description: 'Dish Form is a simple project that enables users to upload information about specific dishes to a website. The form includes fields such as dish name, preparation time, dish type (pizza, soup, or sandwich to choose from), as well as details depending on the selected type, such as the number of slices, diameter, spiciness , or number of bread slices',
+        tags: [
+            'REACT',
+            'STYLED COMPONENTS',
+            'REDUX',
+            'HTML & CSS',
+            'GIT',
+        ],
+        image: df,
+        liveUrl: 'https://mizdebski77.github.io/Dish-Form/',
+        codeUrl: 'https://github.com/mizdebski77/Dish-Form?tab=readme-ov-file',
         APIlink: '',
     },
 ]
