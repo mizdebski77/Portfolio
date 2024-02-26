@@ -27,7 +27,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
     list-style: none;
-    font-family: Armio, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     color: #bcdb02;
 

@@ -1,7 +1,6 @@
-import { AppBar, Box, Toolbar, Typography, Stack, SvgIcon, useMediaQuery } from '@mui/material';
+import { AppBar, Box, Toolbar, Typography, Stack,  useMediaQuery } from '@mui/material';
 import { navLinks } from '../Arrays/navLinks';
 import { NavLink } from './StyledNavbar';
-import ComputerIcon from '@mui/icons-material/Computer';
 import { theme } from '../../core/theme';
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -29,9 +28,6 @@ export const Navigation = () => {
                 <AppBar position="fixed" sx={{ zIndex: 10, py: 1, }}>
                     <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', }}>
                         <Link to='home' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 8 }} >
-                            <SvgIcon sx={{ width: isSmScreen ? 34 : 40, height: isSmScreen ? 34 : 40 }}>
-                                <ComputerIcon />
-                            </SvgIcon>
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontSize: isSmScreen ? 20 : 28, letterSpacing: isMdScreen ? 1 : 6 }}>
                                 Marcin <span style={{ color: theme.palette.primary.light }}>Izdebski</span>
                             </Typography>
