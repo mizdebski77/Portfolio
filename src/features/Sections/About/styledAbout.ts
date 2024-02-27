@@ -13,8 +13,9 @@ overflow: hidden;
 width: 100%;
 padding: 20px;
 display: grid;
+border: 2px solid #bcdb02;
 
-&::before {
+/* &::before {
     content: '';
     position: absolute;
     z-index: -2;
@@ -38,7 +39,7 @@ display: grid;
     background: #100c04;
     box-shadow: 0 0 10px #bcdb02;
     border-radius: 5px;
-};
+}; */
 
 `;
 
