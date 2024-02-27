@@ -71,10 +71,8 @@ export const Skills = () => {
                             borderRadius: 4,
                             borderColor: 'white',
                             transition: "transform 0.3s ease-in-out",
-                            boxShadow: isSmScreen ? '0 0 7px white' : '0 0 10px white',
                             "&:hover": {
                                 transform: 'rotate(30deg)',
-                                boxShadow: `0 0 10px ${theme.palette.primary.contrastText}`,
                                 borderColor: theme.palette.primary.contrastText,
                             }
                         }} >
