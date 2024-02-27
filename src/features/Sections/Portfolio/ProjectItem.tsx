@@ -63,13 +63,13 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                         borderColor: theme.palette.primary.light,
                         borderRadius: 1,
                         overflow: 'hidden',
-                        maxWidth: 600,
+                        maxWidth: 400,
                         width: '100%',
                         display: 'flex',
                         justifyContent: 'center',
                         boxShadow: '0 0 10px white',
                         transition: '0.4s',
-
+                        aspectRatio: '4:3',
                         '&:hover': {
                             boxShadow: `0 0 40px ${theme.palette.primary.contrastText}`,
                         },

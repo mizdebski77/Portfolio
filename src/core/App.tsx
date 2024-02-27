@@ -14,6 +14,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      
       <Part />
       {isSmScreen ? null : (
         <AnimatedCursor

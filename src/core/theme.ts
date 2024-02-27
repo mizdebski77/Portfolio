@@ -10,6 +10,7 @@ export const theme = createTheme({
             xl: 1920,
         },
     },
+
     components: {
         MuiCssBaseline: {
             styleOverrides: {
@@ -31,6 +32,6 @@ export const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: 'Roboto'
+        fontFamily: 'Noto Sans'
     }
 })
