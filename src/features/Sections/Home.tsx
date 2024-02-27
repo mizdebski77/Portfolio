@@ -54,7 +54,7 @@ export const Home = () => {
                             background: '#100c04',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            boxShadow: '50px -50px 60px #3c4601, -80px 60px 60px #191e00',
+                            // boxShadow: '50px -50px 60px #3c4601, -80px 60px 60px #191e00',
                             border: 2,
                             borderColor: 'primary.contrastText',
                             borderRadius: '50%'
@@ -62,7 +62,7 @@ export const Home = () => {
                     >
                         <img src={profile} alt="Profile" style={{ maxWidth: 600, width: '100%' }} />
                     </Box>
-                    <Blob />
+                    {/* <Blob /> */}
                 </Box>
 
                 <Grid2 display='grid' alignItems='center' sx={{ gap: 1, p: 2 }}  >
