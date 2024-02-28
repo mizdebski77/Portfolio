@@ -7,15 +7,12 @@ import AnimatedCursor from 'react-animated-cursor';
 import Part from "../common/particles.";
 import { Sections } from "../features/Sections";
 
-
-
 function App() {
   const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
-      {/* <Part />
+      <Part />
       {isSmScreen ? null : (
         <AnimatedCursor
           innerSize={10}
@@ -25,13 +22,11 @@ function App() {
           innerScale={0.6}
           outerScale={0}
         />
-      )} */}
-
+      )}
       <Navigation />
       <Home />
       <Sections />
     </ThemeProvider>
-
   );
 }
 
