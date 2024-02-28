@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography, Box, useMediaQuery } from '@mui/material';
+import { Grid, Stack, Typography, Box, Paper, useMediaQuery } from '@mui/material';
 import { Languages, aboutInformations } from '../../../common/Arrays/aboutSections';
 import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
@@ -29,15 +29,23 @@ export const AboutTiles = () => {
                 }}
             >
                 {aboutInformations.map((section) => (
-                    <Tile
+                    <Paper
                         ref={ref}
                         key={section.id}
-                        as={motion.div}
+                        component={motion.div}
                         variants={variantOpacity}
                         initial="hidden"
                         animate={animation}
                         transition={{
                             duration: 0.8, delay: section.id * 0.2, ease: 'linear'
+                        }}
+                        sx={{
+                            borderRadius: '10px',
+                            width: '100%',
+                            display: 'grid',
+                            border: 2,
+                            borderColor: theme.palette.primary.contrastText,
+                            background: 'transparent'
                         }}
                     >
                         <Typography
@@ -63,7 +71,7 @@ export const AboutTiles = () => {
                                 </Typography>
                             </Grid>
                         ))}
-                    </Tile>
+                    </Paper>
                 ))}
             </Stack >
             <Box
