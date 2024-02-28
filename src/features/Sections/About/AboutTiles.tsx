@@ -1,6 +1,5 @@
 import { Grid, Stack, Typography, Box, Paper, useMediaQuery } from '@mui/material';
 import { Languages, aboutInformations } from '../../../common/Arrays/aboutSections';
-import { Tile } from './styledAbout';
 import { theme } from '../../../core/theme';
 import Slider from 'react-infinite-logo-slider'
 import { motion } from 'framer-motion';
