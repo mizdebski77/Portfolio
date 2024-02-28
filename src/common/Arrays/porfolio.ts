@@ -170,7 +170,7 @@ export const projects = [
     {
         id: 10,
         name: 'Portfolio',
-        description: 'Welcome to my portfolio! I am Marcin Izdebski, passionate about crafting dynamic websites. Proficient in technologies like REACT, STYLED COMPONENTS, MUI, HTML & CSS, and GIT. Explore my projects in the "Portfolio" section for insights into my skills and design approach. Learn more about me in the "About Me" section, detailing my experience and passion. For collaboration inquiries, reach out through the "Contact" tab. Thank you for visiting!',
+        description: 'Portfolio" is your gateway to essential information about me. From contact details to skills and education, this website is crafted using technologies like React, Styled Components, MUI, and seamlessly integrated with Github. HTML & CSS enhance its user-friendly interface, providing a concise yet comprehensive snapshot of who I am',
         tags: [
             'REACT',
             'STYLED COMPONENTS',
