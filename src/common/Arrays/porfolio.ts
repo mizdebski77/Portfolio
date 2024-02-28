@@ -7,6 +7,7 @@ import mb from '../Images/Project/MovieBorwser.png';
 import ca from '../Images/Project/Crud.png';
 import tl from '../Images/Project/tasksList.png';
 import df from '../Images/Project/Dish form.png';
+import pf from '../Images/Project/Portfolio.png';
 
 export const projects = [
     {
@@ -163,6 +164,23 @@ export const projects = [
         image: df,
         liveUrl: 'https://mizdebski77.github.io/Dish-Form/',
         codeUrl: 'https://github.com/mizdebski77/Dish-Form?tab=readme-ov-file',
+        APIlink: '',
+    },
+
+    {
+        id: 10,
+        name: 'Portfolio',
+        description: 'Welcome to my portfolio! I am Marcin Izdebski, passionate about crafting dynamic websites. Proficient in technologies like REACT, STYLED COMPONENTS, MUI, HTML & CSS, and GIT. Explore my projects in the "Portfolio" section for insights into my skills and design approach. Learn more about me in the "About Me" section, detailing my experience and passion. For collaboration inquiries, reach out through the "Contact" tab. Thank you for visiting!',
+        tags: [
+            'REACT',
+            'STYLED COMPONENTS',
+            'MUI',
+            'HTML & CSS',
+            'GIT',
+        ],
+        image: pf,
+        liveUrl: 'http://marcinizdebski.pl/',
+        codeUrl: 'https://github.com/mizdebski77/Portfolio',
         APIlink: '',
     },
 ]
