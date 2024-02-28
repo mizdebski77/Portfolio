@@ -14,8 +14,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      
-      <Part />
+
+      {/* <Part />
       {isSmScreen ? null : (
         <AnimatedCursor
           innerSize={10}
@@ -25,7 +25,7 @@ function App() {
           innerScale={0.6}
           outerScale={0}
         />
-      )}
+      )} */}
 
       <Navigation />
       <Home />

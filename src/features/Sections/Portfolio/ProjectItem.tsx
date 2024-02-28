@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import { Image, List, ListItem } from './styledPortfolio';
+import { Container, Image, List, ListItem, Middle, Text } from './styledPortfolio';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { theme } from '../../../core/theme';
@@ -51,32 +51,63 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             maxWidth={1500}
         >
             <div style={{ margin: 'auto', }}>
-                <Link
-                    component={motion.a}
+                <Box
+                    component={motion.div}
                     initial={{ opacity: 0 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: project.id % 2 === 0 ? '40vh' : '-40vh' }}
                     transition={{ duration: 0.5, type: "spring", }}
-                    href={project.liveUrl}
-                    target='_blank'
+
                     ref={ref}
                     sx={{
-                        borderColor: theme.palette.primary.light,
-                        borderRadius: 1,
+                        position: 'relative',
+                        borderRadius: '10px',
                         overflow: 'hidden',
-                        maxWidth: 400,
-                        width: '100%',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        boxShadow: '0 0 10px white',
-                        transition: '0.4s',
-                        aspectRatio: '4:3',
-                        '&:hover': {
-                            boxShadow: `0 0 40px ${theme.palette.primary.contrastText}`,
+                        '&:hover img': {
+                            opacity: 0.1,
+                            transform: 'scale(1.1)',
+                        },
+                        '&:hover div': {
+                            opacity: 1,
                         },
                     }}
                 >
-                    <Image src={project.image} alt='project' />
-                </Link>
+                    <Image src={project.image} alt="Your Alt Text" />
+                    <Box
+                        sx={{
+                            transition: '0.5s ease',
+                            opacity: 0,
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            textAlign: 'center',
+                            '&:hover': {
+                                opacity: 1,
+                            },
+                        }}
+                    >
+                        <Link
+                            href={project.liveUrl}
+                            target='_blank'
+                            sx={{
+                                color: '#bcdb02',
+                                fontSize: '24px',
+                                padding: '16px 32px',
+                                textDecoration: 'none',
+                                borderBottom: '2px solid',
+                                transition: '0.3s',
+
+                                "&:hover": {
+                                    borderBottom: '2px solid',
+                                    color: 'white',
+                                }
+                            }}
+                        >
+                            View Project
+                        </Link>
+                    </Box>
+                </Box>
+
             </div>
 
             <Box display='grid' gap={2} >
