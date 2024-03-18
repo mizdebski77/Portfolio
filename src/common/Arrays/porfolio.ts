@@ -8,6 +8,7 @@ import ca from '../Images/Project/Crud.png';
 import tl from '../Images/Project/tasksList.png';
 import df from '../Images/Project/Dish form.png';
 import pf from '../Images/Project/Portfolio.png';
+import ta from '../Images/Project/ta.png';
 
 export const projects = [
     {
@@ -181,6 +182,23 @@ export const projects = [
         image: pf,
         liveUrl: 'http://marcinizdebski.pl/',
         codeUrl: 'https://github.com/mizdebski77/Portfolio',
+        APIlink: '',
+    },
+
+    {
+        id: 11,
+        name: 'Think1st training app',
+        description: 'This project is a web application designed to facilitate sign-ups for training sessions. Users can provide necessary information such as their name, surname, email address, and photo, and select a training day and time. The application also fetches holiday data from the Ninja API to exclude Sundays and public holidays as training days, marking them as unavailable for selection and providing information about the holidays next to their names.',
+        tags: [
+            'REACT',
+            'Tailwind CSS',
+            'Tanstack Query',
+            'API',
+            'GIT',
+        ],
+        image: ta,
+        liveUrl: 'https://mizdebski77.github.io/Training-App/',
+        codeUrl: 'https://github.com/mizdebski77/Training-App',
         APIlink: '',
     },
 ]
