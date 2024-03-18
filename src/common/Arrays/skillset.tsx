@@ -16,7 +16,7 @@ import { SiAdobepremierepro } from "react-icons/si";
 import { SiAdobeaftereffects } from "react-icons/si";
 import { SiStyledcomponents } from "react-icons/si";
 import { SiReactquery } from "react-icons/si";
-
+import { SiTailwindcss } from "react-icons/si";
 
 export const skills = [
   { icon: <FaReact />, text: "React" },
@@ -25,6 +25,7 @@ export const skills = [
   { icon: <FaCss3 />, text: "CSS3" },
   { icon: <SiTypescript />, text: "TypeScript" },
   { icon: <IoLogoJavascript />, text: "JavaScript" },
+  { icon: <SiTailwindcss />, text: "Tailwind CSS" },
   { icon: <DiScrum />, text: "Scrum" },
   { icon: <FaGithub />, text: "GitHub" },
   { icon: <SiStyledcomponents />, text: "Styled Components" },
