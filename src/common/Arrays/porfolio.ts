@@ -120,7 +120,7 @@ export const projects = [
     {
         id: 7,
         name: 'Crud App',
-        description: 'This application has been created as a part of a recruitment task. The purpose of the app is to demonstrate the ability to develop a CRUD (Create, Read, Update, Delete) application for campaign management. This app allows users to add, edit, and delete campaigns.',
+        description: 'The application was developed as per the directive from Futurum Technology. Throughout the project, I collaborated with a seasoned Figma designer and a proficient backend developer. The link provided showcases the basic version of the application, as the complete version was exclusively delivered to the company. The purpose of the app is to demonstrate the ability to develop a CRUD (Create, Read, Update, Delete) application for campaign management.',
         tags: [
             'ANGULAR',
             'SCSS',
@@ -130,7 +130,7 @@ export const projects = [
         ],
         image: ca,
         liveUrl: 'https://crudaplication.netlify.app/',
-        codeUrl: 'https://github.com/mizdebski77/crud-app-angular',
+        codeUrl: '',
         APIlink: '',
     },
 
@@ -188,7 +188,7 @@ export const projects = [
     {
         id: 11,
         name: 'Think1st training app',
-        description: 'This project is a web application designed to facilitate sign-ups for training sessions. Users can provide necessary information such as their name, surname, email address, and photo, and select a training day and time. The application also fetches holiday data from the Ninja API to exclude Sundays and public holidays as training days, marking them as unavailable for selection and providing information about the holidays next to their names.',
+        description: 'The training application was developed exclusively for Think1st, with this being a demo version as the full version was tailored specifically for the company`s needs. Throughout the project, I collaborated closely with a seasoned Figma designer and an expert backend developer. This project is a web application designed to facilitate sign-ups for training sessions. Users can provide necessary information such as their name, surname, email address, and photo, and select a training day and time. The application also fetches holiday data from the Ninja API to exclude Sundays and public holidays as training days, marking them as unavailable for selection and providing information about the holidays next to their names.',
         tags: [
             'REACT',
             'Tailwind CSS',
@@ -198,7 +198,7 @@ export const projects = [
         ],
         image: ta,
         liveUrl: 'https://mizdebski77.github.io/Training-App/',
-        codeUrl: 'https://github.com/mizdebski77/Training-App',
+        codeUrl: '',
         APIlink: '',
     },
 ]
