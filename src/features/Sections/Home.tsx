@@ -8,6 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 import { containerVariants, variantButton, variantText, variantTitle } from "../../core/animation";
 import { theme } from "../../core/theme";
+import { Blob } from "../../core/Blob/Blob";
 
 export const Home = () => {
 
@@ -42,6 +43,8 @@ export const Home = () => {
                     animate="visible"
                     sx={{ display: 'flex', alignItems: 'center', position: 'relative', }}>
                     <svg style={{ position: 'absolute', bottom: 0 }} />
+                    <Blob />
+
                     <Box
                         sx={{
                             maxWidth: isMdScreen ? '240px' : '550px',

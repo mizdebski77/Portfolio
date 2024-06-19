@@ -32,7 +32,7 @@ export const aboutInformations = [
             {
                 title: 'YouCode / ',
                 description: 'Frontend Developer Course',
-                years: '10.2022 – 02.2023',
+                years: '02.2022 – 05.2022',
             },
             {
                 title: 'ProfiLingua Language School / ',
