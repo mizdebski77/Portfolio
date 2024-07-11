@@ -17,20 +17,24 @@ import { SiAdobeaftereffects } from "react-icons/si";
 import { SiStyledcomponents } from "react-icons/si";
 import { SiReactquery } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiNextdotjs } from "react-icons/si";
 
 export const skills = [
   { icon: <FaReact />, text: "React" },
   { icon: <SiRedux />, text: "Redux" },
+  { icon: <SiNextdotjs />, text: 'Next.js' },
+  { icon: <TbBrandReactNative />, text: "React Native" },
   { icon: <FaHtml5 />, text: "HTML5" },
   { icon: <FaCss3 />, text: "CSS3" },
   { icon: <SiTypescript />, text: "TypeScript" },
   { icon: <IoLogoJavascript />, text: "JavaScript" },
   { icon: <SiTailwindcss />, text: "Tailwind CSS" },
+  { icon: <IoLogoFirebase />, text: 'Firebase' },
   { icon: <DiScrum />, text: "Scrum" },
   { icon: <FaGithub />, text: "GitHub" },
   { icon: <SiStyledcomponents />, text: "Styled Components" },
   { icon: <SiReactquery />, text: "React Query" },
-  { icon: <TbBrandReactNative />, text: "React Native" },
   { icon: <SiMui />, text: "Material-UI" },
   { icon: <FaAngular />, text: "Angular" },
   { icon: <FaJira />, text: "Jira" },
