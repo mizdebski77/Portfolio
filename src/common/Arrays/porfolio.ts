@@ -9,24 +9,26 @@ import tl from '../Images/Project/tasksList.png';
 import df from '../Images/Project/Dish form.png';
 import pf from '../Images/Project/Portfolio.png';
 import ta from '../Images/Project/ta.png';
+import ycm from '../Images/Project/YCM.png';
 
 export const projects = [
+
     {
         id: 1,
-        name: 'Easy-Employ',
-        description: 'Easy Employ is a portal dedicated to employers and those looking for a job. Application under construction.',
+        name: 'Your CV Maker',
+        description: 'Your CV Maker is a portal dedicated to creating CVs using AI. (Application under construction).',
         tags: [
-            'REACT',
-            'TYPESCRIPT',
+            'NEXT.JS',
             'REDUX',
-            'STYLED-COMPONENTS',
+            'TYPESCRIPT',
+            'TAILWIND CSS',
             'GIT',
             'TANSTACK-QUERY',
         ],
-        image: ee,
-        liveUrl: 'https://mizdebski77.github.io/Easy-Employ/',
-        codeUrl: 'https://github.com/mizdebski77/Easy-Employ',
-        APIlink: 'https://esay-employ-database-wfsz.onrender.com/',
+        image: ycm,
+        liveUrl: '',
+        codeUrl: '',
+        APIlink: '',
     },
 
     {
@@ -49,58 +51,24 @@ export const projects = [
 
     {
         id: 3,
-        name: 'Polskie Paulownie',
-        description: '"Polskie Paulownie"is a landing page project dedicated to a company that sells oxygen trees. On the website you can find sections such as, among others, photo gallery, contact, and characteristics of the company`s activities.',
+        name: 'Easy-Employ',
+        description: 'Easy Employ is a portal dedicated to employers and those looking for a job. Application under construction.',
         tags: [
             'REACT',
-            'REACT ROUTER',
             'TYPESCRIPT',
+            'REDUX',
             'STYLED-COMPONENTS',
             'GIT',
+            'TANSTACK-QUERY',
         ],
-        image: pp,
-        liveUrl: 'https://polskiepaulownie.pl/Strona-G%C5%82%C3%B3wna',
-        codeUrl: '',
-        APIlink: '',
+        image: ee,
+        liveUrl: 'https://mizdebski77.github.io/Easy-Employ/',
+        codeUrl: 'https://github.com/mizdebski77/Easy-Employ',
+        APIlink: 'https://esay-employ-database-wfsz.onrender.com/',
     },
 
     {
         id: 4,
-        name: 'Mirosław Stach',
-        description: 'Mirsoław Stach, a client of mine, commissioned a website for his service company named "Mirsoław Stach - Firma Usługowa". The website provides basic information about the company.',
-        tags: [
-            'REACT',
-            'REACT ROUTER',
-            'TYPESCRIPT',
-            'STYLED-COMPONENTS',
-            'GIT',
-        ],
-        image: ms,
-        liveUrl: 'https://www.miroslawstach.pl/home',
-        codeUrl: '',
-        APIlink: '',
-    },
-
-    {
-        id: 5,
-        name: 'Wheather App',
-        description: 'The weather app is a one-page application that allows you to check the current weather in any city on earth. The app fetches data from "https://www.weatherapi.com/".',
-        tags: [
-            'REACT',
-            'REDUX',
-            'JAVASCRIPT',
-            'STYLED-COMPONENTS',
-            'GIT',
-            'REDUX-SAGA',
-        ],
-        image: wt,
-        liveUrl: 'https://mizdebski77.github.io/Weather-React-Redux-App/',
-        codeUrl: 'https://github.com/mizdebski77/Weather-React-Redux-App',
-        APIlink: 'https://www.weatherapi.com/',
-    },
-
-    {
-        id: 6,
         name: 'Movie Browser',
         description: 'The Movies Browser is a platform you can easily search for your favorite movies, popular actors and actresses. Also you can find more information about the cast.',
         tags: [
@@ -118,7 +86,60 @@ export const projects = [
     },
 
     {
+        id: 5,
+        name: 'Polskie Paulownie',
+        description: '"Polskie Paulownie"is a landing page project dedicated to a company that sells oxygen trees. On the website you can find sections such as, among others, photo gallery, contact, and characteristics of the company`s activities.',
+        tags: [
+            'REACT',
+            'REACT ROUTER',
+            'TYPESCRIPT',
+            'STYLED-COMPONENTS',
+            'GIT',
+        ],
+        image: pp,
+        liveUrl: 'https://polskiepaulownie.pl/Strona-G%C5%82%C3%B3wna',
+        codeUrl: '',
+        APIlink: '',
+    },
+
+    {
+        id: 6,
+        name: 'Mirosław Stach',
+        description: 'Mirsoław Stach, a client of mine, commissioned a website for his service company named "Mirsoław Stach - Firma Usługowa". The website provides basic information about the company.',
+        tags: [
+            'REACT',
+            'REACT ROUTER',
+            'TYPESCRIPT',
+            'STYLED-COMPONENTS',
+            'GIT',
+        ],
+        image: ms,
+        liveUrl: 'https://www.miroslawstach.pl/home',
+        codeUrl: '',
+        APIlink: '',
+    },
+
+    {
         id: 7,
+        name: 'Wheather App',
+        description: 'The weather app is a one-page application that allows you to check the current weather in any city on earth. The app fetches data from "https://www.weatherapi.com/".',
+        tags: [
+            'REACT',
+            'REDUX',
+            'JAVASCRIPT',
+            'STYLED-COMPONENTS',
+            'GIT',
+            'REDUX-SAGA',
+        ],
+        image: wt,
+        liveUrl: 'https://mizdebski77.github.io/Weather-React-Redux-App/',
+        codeUrl: 'https://github.com/mizdebski77/Weather-React-Redux-App',
+        APIlink: 'https://www.weatherapi.com/',
+    },
+
+
+    {
+        id: 8,
         name: 'Crud App',
         description: 'The application was developed as per the directive from Futurum Technology. Throughout the project, I collaborated with a seasoned Figma designer and a proficient backend developer. The link provided showcases the basic version of the application, as the complete version was exclusively delivered to the company. The purpose of the app is to demonstrate the ability to develop a CRUD (Create, Read, Update, Delete) application for campaign management.',
         tags: [
@@ -135,7 +156,7 @@ export const projects = [
     },
 
     {
-        id: 8,
+        id: 9,
         name: 'Tasks List',
         description: '"To do list" is a web application which allows you to create a list of tasks that need to be done in the near future. At the top of application you can see a navigation toolbar which can take you to tasks page or to an author page.',
         tags: [
@@ -152,7 +173,7 @@ export const projects = [
     },
 
     {
-        id: 9,
+        id: 10,
         name: 'Dish Form',
         description: 'Dish Form is a simple project that enables users to upload information about specific dishes to a website. The form includes fields such as dish name, preparation time, dish type (pizza, soup, or sandwich to choose from), as well as details depending on the selected type, such as the number of slices, diameter, spiciness , or number of bread slices',
         tags: [
@@ -169,7 +190,7 @@ export const projects = [
     },
 
     {
-        id: 10,
+        id: 11,
         name: 'Portfolio',
         description: 'Portfolio" is your gateway to essential information about me. From contact details to skills and education, this website is crafted using technologies like React, Styled Components, MUI, and seamlessly integrated with Github. HTML & CSS enhance its user-friendly interface, providing a concise yet comprehensive snapshot of who I am',
         tags: [
@@ -186,7 +207,7 @@ export const projects = [
     },
 
     {
-        id: 11,
+        id: 12,
         name: 'Think1st training app',
         description: 'The training application was developed exclusively for Think1st, with this being a demo version as the full version was tailored specifically for the company`s needs. Throughout the project, I collaborated closely with a seasoned Figma designer and an expert backend developer. This project is a web application designed to facilitate sign-ups for training sessions. Users can provide necessary information such as their name, surname, email address, and photo, and select a training day and time. The application also fetches holiday data from the Ninja API to exclude Sundays and public holidays as training days, marking them as unavailable for selection and providing information about the holidays next to their names.',
         tags: [
