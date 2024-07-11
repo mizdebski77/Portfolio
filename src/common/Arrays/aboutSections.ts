@@ -66,7 +66,7 @@ export const Languages = [
     {
         id: 3,
         name: 'German',
-        level: 'A2',
+        level: 'B1',
         icon: ger
     }
 ]
