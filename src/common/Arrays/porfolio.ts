@@ -26,7 +26,7 @@ export const projects = [
             'TANSTACK-QUERY',
         ],
         image: ycm,
-        liveUrl: '',
+        liveUrl: 'https://ycm-rhj5xm8pt-mizdebski77s-projects.vercel.app/',
         codeUrl: '',
         APIlink: '',
     },
