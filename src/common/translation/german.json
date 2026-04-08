@@ -1,0 +1,73 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "portfolio": "Portfolio",
+        "skills": "Fähigkeiten",
+        "about": "Über mich",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Frontend / Mobile App Entwickler",
+        "subtitle": "Mid Frontend Developer mit über 3 Jahren Erfahrung in React, Vue.js und TypeScript. Spezialist im E-Commerce-Sektor mit fundierten Kenntnissen in der Integration komplexer Search- und Discovery-Lösungen auf über 15 großen Plattformen (z. B. Shopify, Magento, PrestaShop). Nachgewiesene Kompetenz in der Umsetzung von End-to-End-Full-Stack-Projekten mit Next.js, Supabase und Firebase. Verbindet technische Eigenständigkeit mit Fokus auf WCAG-Konformität, Performance-Optimierung und nahtlose API-Integrationen innerhalb von Agile-Workflows.",
+        "cta1": "Kontakt",
+        "cta2": "Projekte"
+    },
+    "projects": {
+        "title": "Projekte",
+        "link1": "Web-Anwendungen",
+        "link2": "Mobile Anwendungen",
+        "link3": "Landing Pages"
+    },
+    "technologies": {
+        "title": "Technologien",
+        "subtitle": "Ich habe Erfahrung in der Arbeit mit den unten genannten Technologien, die ich zur Entwicklung moderner Web- und Mobile-Anwendungen verwende. Mein Fokus liegt auf Funktionalität, Leistung und intuitivem Design, um die Bedürfnisse sowohl der Benutzer als auch der Unternehmen zu erfüllen.",
+        "category1": "Frontend-Technologien",
+        "category2": "Backend-Technologien",
+        "category3": "Teamarbeit",
+        "category4": "UI / UX"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "description": "Treten Sie in Kontakt",
+        "name": "Vorname",
+        "last": "Nachname",
+        "number": "Telefonnummer",
+        "message": "Nachricht",
+        "button": "Nachricht senden"
+    },
+    "about": {
+        "title": "Über mich",
+        "description": "Frontend-Entwickler mit über 2 Jahren Erfahrung in der Entwicklung moderner, responsiver Webanwendungen und skalierbarer Full-Stack-Lösungen. Spezialisiert auf React, TypeScript, Next.js, HTML & CSS, Redux und Versionskontrolle mit GitHub. Erfahren in der Entwicklung von mobilen Anwendungen und Full-Stack-Anwendungen unter Verwendung von Backend-Technologien und API-Integration. Erfolgreiche Lieferung verschiedener Projekte, einschließlich E-Commerce-Plattformen, CRM-Systemen, Schulungsanwendungen, Landing Pages und mobiler Lösungen, die zur Verbesserung der Benutzerfreundlichkeit und Effizienz beigetragen haben. Erfahren in der API-Integration und der Bereitstellung funktionaler Anwendungen, die auf die Bedürfnisse der Benutzer zugeschnitten sind. Ich arbeite nach agilen Methoden (Scrum) und verwende Tools wie JIRA und Trello. Leidenschaftlich daran interessiert, Produkte zu erstellen, die hervorragende Funktionalität mit einer benutzerfreundlichen Oberfläche kombinieren und auf verschiedenen Plattformen anpassbar sind.",
+        "educationUniversity": "Silesian University of Technology, Fakultät für Automatisierungstechnik, Elektronik und Informatik",
+        "educationTitle": "Ingenieur",
+        "coursesSubtitle": "Kurse",
+        "educationSubtitle": "Ausbildung",
+        "education": "Elektronik und Telekommunikation",
+        "engineeringThesis": "Elektronische Station zur Entfernungsmessung mit Anzeige auf einem mobilen Gerät – Design und Implementierung einer Station zur Garagenentfernungsmessung mit Anzeige auf dem Bildschirm eines mobilen Geräts",
+        "course1Title": "YouCode",
+        "course1Name": "Frontend-Entwicklerkurs",
+        "course2Title": "ProfiLingua Sprachschule ",
+        "course2Name": "Deutsch-Kurs",
+        "langTitle": "Sprachen",
+        "langTitle1": "Englisch - B2",
+        "langTitle2": "Deutsch - B1",
+        "langTitle3": "Polnisch - Muttersprache"
+    },
+    "portfolio": {
+        "project1": "",
+        "project2": "Trek Shop ist ein Online-Shop, der auf einer eigenen API basiert, die in Node.js geschrieben und online gehostet wird, wodurch sie für Benutzer zugänglich ist. Dieses Projekt wurde mit Outdoor-Enthusiasten im Hinterkopf erstellt und bietet eine große Auswahl an Produkten, darunter Kletterausrüstung, Outdoor-Bekleidung und mehr.",
+        "project3": "Easy Employ ist ein Portal, das sich an Arbeitgeber und Arbeitssuchende richtet. Die Anwendung befindet sich im Bau.",
+        "project4": "The Movies Browser ist eine Plattform, auf der du nach deinen Lieblingsfilmen sowie nach beliebten Schauspielern und Schauspielerinnen suchen kannst. Du kannst auch mehr Informationen über das Cast erfahren.",
+        "project5": "Die Wetter-App ist eine Einzelseitenanwendung, mit der du das aktuelle Wetter in jeder Stadt weltweit überprüfen kannst. Die App ruft Daten von 'https://www.weatherapi.com/' ab.",
+        "project6": "Die Anwendung wurde nach den Vorgaben von Futurum Technology entwickelt. Während des Projekts arbeitete ich mit einem erfahrenen Figma-Designer und einem kompetenten Backend-Entwickler zusammen. Der bereitgestellte Link zeigt die Basisversion der Anwendung, da die vollständige Version ausschließlich dem Unternehmen zur Verfügung gestellt wurde. Ziel der App war es, die Fähigkeit zu demonstrieren, eine CRUD-Anwendung (Erstellen, Lesen, Aktualisieren, Löschen) für das Kampagnenmanagement zu entwickeln.",
+        "project7": "Die To-Do-Liste ist eine Webanwendung, mit der du eine Liste von Aufgaben erstellen kannst, die in naher Zukunft erledigt werden müssen. Am oberen Rand der Anwendung kannst du eine Navigationsleiste sehen, die dich zur Aufgaben-Seite oder zur Autoren-Seite führt.",
+        "project8": "Die Trainingsanwendung wurde exklusiv für Think1st entwickelt, wobei dies die Demo-Version ist, da die vollständige Version speziell auf die Bedürfnisse des Unternehmens zugeschnitten wurde. Während des Projekts arbeitete ich eng mit einem erfahrenen Figma-Designer und einem Backend-Entwickler zusammen. Dieses Projekt ist eine Webanwendung, die die Anmeldung zu Schulungen ermöglicht. Nutzer können erforderliche Informationen wie ihren Namen, Nachnamen, E-Mail-Adresse und Foto angeben und einen Schulungstag und -zeit auswählen. Die Anwendung ruft auch Feiertagsdaten von der Ninja-API ab, um Sonntage und öffentliche Feiertage als Trainingstage auszuschließen und sie als nicht verfügbar zu kennzeichnen. Zudem wird eine Information über die Feiertage neben deren Namen angezeigt.",
+        "landing1": "Polskie Paulownie ist ein Projekt einer Landingpage, die einem Unternehmen gewidmet ist, das Sauerstoffbäume verkauft. Auf der Website finden Sie Abschnitte wie Fotogalerie, Kontakt und eine Beschreibung der Geschäftstätigkeit des Unternehmens.",
+        "landing2": " Die Website von SB Pracownia ist eine moderne und visuell ansprechende Präsentation des Architekturbüros, gestaltet mit React, TailwindCSS und TypeScript. Sie enthält ein eindrucksvolles Hintergrundvideo, einen Abschnitt, der die Vision des Unternehmens hervorhebt, eine Projektgalerie und ein responsives Kontaktformular, alles in einem schlanken und minimalistischen Design für ein nahtloses Nutzererlebnis auf jedem Gerät.",
+        "landing3": "Mirosław Stach, ein Kunde von mir, beauftragte mich mit der Erstellung einer Website für sein Dienstleistungsunternehmen „Mirosław Stach - Firma Usługowa“. Die Website enthält grundlegende Informationen über das Unternehmen.",
+        "landing4": "Die Website Optimize Performance wurde für den Kunden erstellt und ist für Gruppen- und Einzeltrainings gedacht. Die Website enthält grundlegende Informationen über das Unternehmen.",
+        "landing5": "Portfolio ist Ihr Zugang zu wesentlichen Informationen über mich. Von Kontaktdaten bis hin zu Fähigkeiten und Ausbildung wurde diese Website mit Technologien wie React, Styled Components, MUI und der nahtlosen Integration in Github erstellt. HTML und CSS verbessern die benutzerfreundliche Oberfläche und bieten ein prägnantes, aber umfassendes Bild von mir.",
+        "landing6":"Die Website von Ingreso ist ein professioneller Corporate Hub für ein Immobilienprojektentwicklungsunternehmen, das auf Investitionstransparenz und Immobilienmanagement spezialisiert ist. Sie dient als zentrale Plattform für das Portfolio des Unternehmens und hebt dessen Expertise in den Bereichen Grundstücksakquise, Wohnungsbau und anspruchsvolle Entwicklungsprojekte hervor. Das Design zielt darauf ab, das Vertrauen der Investoren durch ein klares, geschäftsorientiertes Layout und eine transparente Darstellung der Zuverlässigkeit und Professionalität des Bauträgers zu stärken.",
+        "landing7":"Die Website von W161 ist eine moderne und konversionsoptimierte Sales-Landingpage für ein spezifisches Wohnprojekt in Łódź. Sie stellt das Konzept der „15-Minuten-Stadt“ in den Vordergrund und bietet detaillierte Wohnungsgrundrisse, eine Präsentation der Dachterrasse sowie hochwertige „schlüsselfertige“ Ausstattungsoptionen. Mit immersiven Architekturvisualisierungen und einem intuitiven Investitions-Navigator führt die Seite potenzielle Käufer effektiv von der Erkundung der Lifestyle-Vorteile bis hin zur Kontaktaufnahme mit dem Vertriebsbüro."
+    }
+}

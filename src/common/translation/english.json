@@ -1,0 +1,73 @@
+{
+    "navbar": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "skills": "Skills",
+        "about": "About me",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Frontend / Mobile app developer",
+        "subtitle": "Mid Frontend Developer with 3+ years of experience in React, Vue.js, and TypeScript. Specialist in the e-commerce sector, with a strong background in integrating complex search and discovery solutions across 15+ major platforms (Shopify, Magento, PrestaShop). Proven ability to deliver end-to-end full-stack projects using Next.js, Supabase, and Firebase. Ability to combine technical autonomy with a focus on WCAG compliance, performance optimization, and seamless API integrations within Agile workflows.",
+        "cta1": "Contact",
+        "cta2": "Projects"
+    },
+    "projects": {
+        "title": "Projects",
+        "link1": "Web Applications",
+        "link2": "Mobile Applications",
+        "link3": "Landing Pages"
+    },
+    "technologies": {
+        "title": "Technologies",
+        "subtitle": "I have experience working with the technologies below, which I use to build modern web and mobile applications. I focus on functionality, performance, and intuitive design to meet the needs of both users and businesses.",
+        "category1": "Frontend Technologies",
+        "category2": "Backend Technologies",
+        "category3": "Teamwork",
+        "category4": "UI / UX"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Get in touch",
+        "name": "First name",
+        "last": "Last name",
+        "number": "Phone number",
+        "message": "Message",
+        "button": "Send message"
+    },
+    "about": {
+        "title": "About me",
+        "description": "Frontend Developer with over 2 years of experience in building modern, responsive web applications and scalable full-stack solutions. Specialized in React, TypeScript, Next.js, HTML & CSS, Redux, and version control using GitHub. Proficient in developing mobile applications and full-stack applications utilizing backend technologies and API integration. I have successfully delivered diverse projects, including e-commerce platforms, CRM systems, training applications, landing pages, and mobile solutions, contributing to improved usability and efficiency. Experienced in API integration and delivering functional applications tailored to user needs. I work within Agile methodologies (Scrum) and utilize tools such as JIRA and Trello. Passionate about creating products that combine excellent functionality with a user-friendly interface and are adaptable across various platforms.",
+        "educationUniversity": "Silesian University of Technology, Faculty of Automatic Control, Electronics and Computer Science ",
+        "educationTitle": "Engineer",
+        "educationSubtitle": "Education",
+        "coursesSubtitle": "Courses",
+        "education": "Electronics and Telecommunications ",
+        "engineeringThesis": "Electronic station for measuring distances with exposure on a mobile device. – Design and implementation of a station for garage distance measurement with display on the screen of a mobile device",
+        "course1Title": "YouCode",
+        "course1Name": "Frontend Developer course",
+        "course2Title": "ProfiLingua Language School ",
+        "course2Name": "German course",
+        "langTitle": "Languages",
+        "langTitle1": "English - B2",
+        "langTitle2": "German - B1",
+        "langTitle3": "Polish - Native"
+    },
+    "portfolio": {
+        "project1": "",
+        "project2": "Trek Shop is an online store that relies on its own API written in Node.js and hosted online, making it accessible to users. This project was created with outdoor enthusiasts in mind, offering a rich variety of products, including climbing equipment, outdoor clothing, and more.",
+        "project3": "Easy Employ is a portal dedicated to employers and those looking for a job. Application under construction.",
+        "project4": "The Movies Browser is a platform you can easily search for your favorite movies, popular actors and actresses. Also you can find more information about the cast.",
+        "project5": "The weather app is a one-page application that allows you to check the current weather in any city on earth. The app fetches data from 'https://www.weatherapi.com/.'",
+        "project6": "The application was developed as per the directive from Futurum Technology. Throughout the project, I collaborated with a seasoned Figma designer and a proficient backend developer. The link provided showcases the basic version of the application, as the complete version was exclusively delivered to the company. The purpose of the app is to demonstrate the ability to develop a CRUD (Create, Read, Update, Delete) application for campaign management.",
+        "project7": "To do list is a web application which allows you to create a list of tasks that need to be done in the near future. At the top of application you can see a navigation toolbar which can take you to tasks page or to an author page.",
+        "project8": "The training application was developed exclusively for Think1st, with this being a demo version as the full version was tailored specifically for the company`s needs. Throughout the project, I collaborated closely with a seasoned Figma designer and an expert backend developer. This project is a web application designed to facilitate sign-ups for training sessions. Users can provide necessary information such as their name, surname, email address, and photo, and select a training day and time. The application also fetches holiday data from the Ninja API to exclude Sundays and public holidays as training days, marking them as unavailable for selection and providing information about the holidays next to their names.",
+        "landing1": "Polskie Paulownie is a landing page project dedicated to a company that sells oxygen trees. On the website you can find sections such as, among others, photo gallery, contact, and characteristics of the company`s activities.",
+        "landing2": "SB Pracownia's website is a modern and visually captivating showcase for the architectural studio, designed with React, TailwindCSS, and TypeScript. It includes a striking background video, an  section highlighting the firm's vision, a project gallery, and a responsive contact form, all wrapped in a sleek and minimalist design for a seamless user experience on any device.",
+        "landing3": "Mirsoław Stach, a client of mine, commissioned a website for his service company named 'Mirsoław Stach - Firma Usługowa'. The website provides basic information about the company.",
+        "landing4": "Optimize performance website created for the client, dedicated to group and individual training. The website provides basic information about the company.",
+        "landing5": "Portfolio is your gateway to essential information about me. From contact details to skills and education, this website is crafted using technologies like React, Styled Components, MUI, and seamlessly integrated with Github. HTML & CSS enhance its user-friendly interface, providing a concise yet comprehensive snapshot of who I am",
+        "landing6": "Ingreso's website is a professional corporate hub for a real estate development firm, focused on investment transparency and property management. It serves as a central platform for the company’s portfolio, highlighting their expertise in land acquisition, residential construction, and high-standard development projects. The site is designed to build investor confidence through a clean, business-oriented layout and a clear presentation of the developer’s reliability and professional scale.",
+        "landing7": "W161’s website is a modern and conversion-focused sales landing page for a specific residential investment in Łódź. It highlights the '15-minute city' concept, featuring detailed apartment layouts, a showcase of the rooftop viewing terrace, and premium 'turnkey' finishing options. With its immersive architectural visualizations and intuitive investment navigator, the site effectively guides potential buyers from exploring the building's lifestyle benefits to contacting the sales office."
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "navbar": {
+        "home": "Strona główna",
+        "portfolio": "Portfolio",
+        "skills": "Umiejętności",
+        "about": "O mnie",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Programista aplikacji webowych oraz mobilnych",
+        "subtitle": "Mid Frontend Developer z ponad 3-letnim doświadczeniem w pracy z React, Vue.js oraz TypeScript. Specjalista w sektorze e-commerce, posiadający bogate doświadczenie w integracji złożonych rozwiązań wyszukiwania i rekomendacji produktowych na ponad 15 głównych platformach (m.in. Shopify, Magento, PrestaShop). Wykazuje się umiejętnością dostarczania kompleksowych projektów full-stack przy użyciu Next.js, Supabase oraz Firebase. Łączy techniczną samodzielność z dbałością o standardy WCAG, optymalizację wydajności oraz płynną integrację API w ramach metodyki Agile.",
+        "cta1": "Kontakt",
+        "cta2": "Projekty"
+    },
+    "projects": {
+        "title": "Projekty",
+        "link1": "Aplikacje webowe",
+        "link2": "Aplikacje mobilne",
+        "link3": "Landing pages"
+    },
+    "technologies": {
+        "title": "Technologie",
+        "subtitle": "Posiadam doświadczenie w pracy z poniższymi technologiami, których używam do budowania nowoczesnych aplikacji webowych i mobilnych. Skupiam się na funkcjonalności, wydajności i intuicyjnym designie, aby spełniać potrzeby zarówno użytkowników, jak i firm.",
+        "category1": "Technologie frontendowe",
+        "category2": "Technologie backendowe",
+        "category3": "Praca zespołowa",
+        "category4": "UI / UX"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "description": "Skontaktuj się ze mną",
+        "name": "Imię",
+        "last": "Nazwisko",
+        "number": "Numer telefonu",
+        "message": "Wiadomość",
+        "button": "Wyślij wiadomość"
+    },
+    "about": {
+        "title": "O mnie",
+        "description": "Frontend Developer z ponad 2-letnim doświadczeniem w tworzeniu nowoczesnych, responsywnych aplikacji webowych oraz skalowalnych rozwiązań full-stack. Specjalizuję się w React, TypeScript, Next.js, HTML & CSS, Redux oraz kontroli wersji za pomocą GitHub. Posiadam doświadczenie w tworzeniu aplikacji mobilnych oraz full-stackowych, wykorzystując technologie backendowe oraz integrację API. Z powodzeniem dostarczyłem różne projekty, w tym platformy e-commerce, systemy CRM, aplikacje do szkoleń, landing pages i rozwiązania mobilne, przyczyniając się do poprawy użyteczności i wydajności. Doświadczony w integracji API i dostarczaniu funkcjonalnych aplikacji, które są dostosowane do potrzeb użytkowników. Pracuję w metodykach Agile (Scrum) i używam narzędzi takich jak JIRA oraz Trello. Pasjonuję się tworzeniem produktów, które łączą doskonałą funkcjonalność z przyjaznym interfejsem użytkownika i są dostosowane do różnych platform.",
+        "educationUniversity": "Politechnika Śląska, Wydział Automatyki, Elektroniki i Informatyki",
+        "educationSubtitle": "Edukacja",
+        "coursesSubtitle": "Kursy",
+        "educationTitle": "Inżynier",
+        "education": "Elektronika i telekomunikacja",
+        "engineeringThesis": "Elektroniczna stacja do pomiaru odległości z wyświetlaczem na urządzeniu mobilnym – Projekt i realizacja stacji do pomiaru odległości w garażu z wyświetlaniem na ekranie urządzenia mobilnego",
+        "course1Title": "YouCode",
+        "course1Name": "Kurs Frontend Developera",
+        "course2Title": "ProfiLingua Szkoła Językowa",
+        "course2Name": "Kurs języka niemieckiego",
+        "langTitle": "Języki",
+        "langTitle1": "Angielski - B2",
+        "langTitle2": "Niemiecki - B1",
+        "langTitle3": "Polski - Język ojczysty"
+    },
+    "portfolio": {
+        "project1": "",
+        "project2": "Trek Shop to sklep internetowy oparty na własnym API napisanym w Node.js, hostowanym online, dzięki czemu jest dostępny dla użytkowników. Projekt stworzony z myślą o miłośnikach outdooru, oferujący szeroką gamę produktów, w tym sprzęt wspinaczkowy, odzież outdoorową i inne.",
+        "project3": "Easy Employ to portal dedykowany pracodawcom i osobom szukającym pracy. Aplikacja w trakcie budowy.",
+        "project4": "The Movies Browser to platforma, na której możesz łatwo wyszukać swoje ulubione filmy, popularnych aktorów i aktorki. Możesz także znaleźć więcej informacji o obsadzie.",
+        "project5": "Aplikacja pogodowa to aplikacja jednosesyjna, która pozwala na sprawdzenie aktualnej pogody w dowolnym mieście na świecie. Aplikacja pobiera dane z 'https://www.weatherapi.com/'.",
+        "project6": "Aplikacja została stworzona na zlecenie firmy Futurum Technology. W trakcie projektu współpracowałem z doświadczonym projektantem Figma oraz kompetentnym backend developerem. Udostępniony link pokazuje podstawową wersję aplikacji, ponieważ pełna wersja została dostarczona wyłącznie firmie. Celem aplikacji było pokazanie umiejętności stworzenia aplikacji CRUD (Create, Read, Update, Delete) do zarządzania kampaniami.",
+        "project7": "To do list to aplikacja webowa, która pozwala tworzyć listę zadań do wykonania w najbliższym czasie. Na górze aplikacji znajduje się pasek nawigacyjny, który przenosi do strony z zadaniami lub strony autora.",
+        "project8": "Aplikacja szkoleniowa została stworzona wyłącznie dla Think1st, a wersja demonstracyjna jest dostępna, ponieważ pełna wersja była dostosowana specjalnie do potrzeb firmy. Podczas projektu współpracowałem ściśle z doświadczonym projektantem Figma oraz backend developerem. Projekt to aplikacja webowa do rejestracji na sesje szkoleniowe. Użytkownicy mogą podać swoje dane, takie jak imię, nazwisko, adres e-mail i zdjęcie oraz wybrać dzień i godzinę szkolenia. Aplikacja pobiera także dane o dniach wolnych z Ninja API, aby wykluczyć niedziele oraz święta jako dni dostępne do wyboru i oznaczyć je jako niedostępne, wyświetlając informacje o tych dniach.",
+        "landing1": "Polskie Paulownie to projekt strony docelowej poświęcony firmie sprzedającej drzewa tlenowe. Na stronie można znaleźć sekcje takie jak galeria zdjęć, kontakt oraz charakterystyka działalności firmy.",
+        "landing2": "Strona SB Pracownia to nowoczesna i wizualnie przyciągająca wizytówka studia architektonicznego, zaprojektowana w React, TailwindCSS i TypeScript. Obejmuje efektowne wideo w tle, sekcję podkreślającą wizję firmy, galerię projektów oraz responsywny formularz kontaktowy, wszystko to w eleganckim i minimalistycznym designie, zapewniającym bezproblemowe użytkowanie na każdym urządzeniu.",
+        "landing3": "Mirosław Stach, mój klient, zlecił stworzenie strony internetowej dla swojej firmy usługowej „Mirosław Stach - Firma Usługowa”. Strona zawiera podstawowe informacje o firmie.",
+        "landing4": "Strona internetowa Optimize Performance została stworzona dla klienta i dedykowana grupowym i indywidualnym szkoleniom. Strona zawiera podstawowe informacje o firmie.",
+        "landing6":"Witryna Ingreso to profesjonalne centrum korporacyjne firmy deweloperskiej, koncentrujące się na przejrzystości inwestycyjnej i zarządzaniu nieruchomościami. Służy jako centralna platforma dla portfolio firmy, podkreślając ich doświadczenie w pozyskiwaniu gruntów, budownictwie mieszkaniowym oraz projektach deweloperskich o wysokim standardzie. Strona została zaprojektowana tak, aby budować zaufanie inwestorów poprzez czysty, biznesowy układ i przejrzystą prezentację rzetelności oraz profesjonalnej skali dewelopera.",
+        "landing5": "Portfolio to Twoja brama do kluczowych informacji o mnie. Od danych kontaktowych po umiejętności i wykształcenie, strona została stworzona z wykorzystaniem technologii takich jak React, Styled Components, MUI i zintegrowana z Githubem. HTML i CSS wzbogacają przyjazny interfejs, zapewniając zwięzły, ale kompleksowy obraz mojej osoby.",
+        "landing7":"Strona W161 to nowoczesny i nastawiony na konwersję landing page sprzedażowy dla konkretnej inwestycji mieszkaniowej w Łodzi. Kładzie nacisk na koncepcję „miasta 15-minutowego”, prezentując szczegółowe układy mieszkań, pokazowy taras widokowy na dachu oraz opcje wykończenia premium „pod klucz”. Dzięki imersyjnym wizualizacjom architektonicznym i intuicyjnej nawigacji po inwestycji, witryna skutecznie prowadzi potencjalnych nabywców od poznania zalet stylu życia w budynku aż po kontakt z biurem sprzedaży."
+    }
+}
